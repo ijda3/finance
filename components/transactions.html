@@ -1,0 +1,286 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        .transaction-container {
+            display: flex;
+            flex-direction: column;
+            font-family: Roboto;
+            padding: 65px 50px 0px 50px;
+        }
+
+        .transaction-container h2 {
+            display: inline;
+            font-weight: 700;
+            line-height: 30px;
+        }
+
+        .transaction-container-row {
+            height: 30px;
+            padding-bottom: 20px;
+        }
+
+        .options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            float: right;
+            flex-wrap: nowrap;
+            width: 64px;
+        }
+
+        .search-bar {
+            background: #F7F8FA;
+            border: none;
+            border-radius: 8px;
+            width: 100%;
+            height: 30px;
+            padding-left: 10px;
+            color: black;
+            line-height: 11px;
+            opacity: 1;
+            font-family: Roboto;
+            font-size: 9px;
+            font-weight: 400;
+            outline: none;
+        }
+
+        .search-bar:focus {
+            box-shadow: 0 0 0 1px #afafaf;
+        }
+
+        .search-bar::placeholder {
+            color: black;
+            line-height: 11px;
+            opacity: 1;
+            font-size: 9px;
+            font-weight: 400;
+        }
+
+        .search-bar:-ms-input-placeholder { 
+            color: black;
+            line-height: 10.55px;
+            opacity: 1;
+            font-size: 9px;
+            font-weight: 400;
+        }
+
+        .search-bar::-ms-input-placeholder { 
+            color: black;
+            line-height: 10.55px;
+            opacity: 1;
+            font-size: 9px;
+            font-weight: 400;
+        }
+
+        .list-cards {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .list-cards h4 {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 10px;
+            color: #9A9A9A;
+        }
+
+        .list-cards-item {
+            text-align: left;
+        }
+
+        .list-cards-item p {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 26px;
+        }
+
+        .list {
+            margin-top: 32px;
+        }
+
+        .list li{
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            z-index : 1;
+            padding-bottom: 14px;
+            margin-bottom: 10px;
+            height: 34px;
+        }
+
+        .list li:before {
+            content : "";
+            position: absolute;
+            left    : 25px;
+            right: 25px;
+            bottom  : 0;
+            height  : 1px;
+            width   : auto;  /* or 100px */
+            border-bottom: 1px solid #F3F4F5;
+        }
+
+        .icon-container {
+            order: 1;
+            box-sizing: border-box;            
+            width: 34px;
+            height: 34px;
+            left: 0px;            
+            background: #FFFFFF;
+            box-shadow: 0 0 0 1px #F5F6F8;
+            border-radius: 5px;
+            padding: 5px 5px 5px 5px !important;
+        }
+
+        .icon-container img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .transaction-info {
+            order: 2;
+            width: 100%;
+            margin-left: 14px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .transaction-info-company {
+            font-weight: 700;
+            font-size: 11px;
+            line-height: 13px;
+            color: black;
+        }
+
+        .transaction-info-datetime {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 9px;
+            line-height: 11px;        
+            color: #9A9A9A;
+        }
+        .transaction-cost {
+            order: 3;
+            width: 50px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 34px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<div class="transaction-container">
+    <div class="transaction-container-row">
+        <h2>Transações</h2>
+        <div class="options">
+            <img src="/images/date_range.svg" width="14px" height="14px">
+            <img src="/images/add_btn.svg">
+        </div>
+    </div>
+    <div class="transaction-container-row">
+        <form>
+            <input type="text" class="search-bar" placeholder="Pesquisar">
+        </form>
+    </div>
+    <div class="transaction-container-row list-cards">
+        <div class="list-cards-item" style="flex-grow: 3;">
+            <h4>Receitas</h4>
+            <p>R$120,23</p>
+        </div>
+        <div class="list-cards-item" style="flex-grow: 1;">
+            <h4>Despesas</h4>
+            <p>R$120,23</p>
+        </div>
+        <div class="list-cards-item" style="flex-grow: 4;text-align: right;">
+            <h4>Saldo</h4>
+            <p>R$120,23</p>
+        </div>
+    </div>
+    <div class="list">
+        <ul>
+            <li>
+                <div class="icon-container"><img src="/images/amazon.svg"></div>
+                <div class="transaction-info">
+                    <div class="transaction-info-company">Amazon</div>
+                    <div class="transaction-info-datetime">17/07/2021 14:32</div>
+                </div>
+                <div class="transaction-cost">R$120,23</div>
+            </li>
+            <li>
+                <div class="icon-container"><img src="/images/uber.svg"></div>
+                <div class="transaction-info">
+                    <div class="transaction-info-company">Uber</div>
+                    <div class="transaction-info-datetime">17/07/2021 14:32</div>
+                </div>
+                <div class="transaction-cost">R$120,23</div>
+            </li>
+            <li>
+                <div class="icon-container"><img src="/images/copel.svg"></div>
+                <div class="transaction-info">
+                    <div class="transaction-info-company">Copel</div>
+                    <div class="transaction-info-datetime">17/07/2021 14:32</div>
+                </div>
+                <div class="transaction-cost">R$120,23</div>
+            </li>
+            <li>
+                <div class="icon-container"><img src="/images/amazon.svg"></div>
+                <div class="transaction-info">
+                    <div class="transaction-info-company">Condomínio</div>
+                    <div class="transaction-info-datetime">17/07/2021 14:32</div>
+                </div>
+                <div class="transaction-cost">R$120,23</div>
+            </li>
+            <li>
+                <div class="icon-container"><img src="/images/vivo.svg"></div>
+                <div class="transaction-info">
+                    <div class="transaction-info-company">Internet</div>
+                    <div class="transaction-info-datetime">17/07/2021 14:32</div>
+                </div>
+                <div class="transaction-cost">R$120,23</div>
+            </li>
+            <li>
+                <div class="icon-container"><img src="/images/netflix.svg"></div>
+                <div class="transaction-info">
+                    <div class="transaction-info-company">Netflix</div>
+                    <div class="transaction-info-datetime">17/07/2021 14:32</div>
+                </div>
+                <div class="transaction-cost">R$120,23</div>
+            </li>
+            <li>
+                <div class="icon-container"><img src="/images/xbox.svg"></div>
+                <div class="transaction-info">
+                    <div class="transaction-info-company">Xbox Game Pass</div>
+                    <div class="transaction-info-datetime">17/07/2021 14:32</div>
+                </div>
+                <div class="transaction-cost">R$120,23</div>
+            </li>
+            <li>
+                <div class="icon-container"><img src="/images/spotify.svg"></div>
+                <div class="transaction-info">
+                    <div class="transaction-info-company">Spotify</div>
+                    <div class="transaction-info-datetime">17/07/2021 14:32</div>
+                </div>
+                <div class="transaction-cost">R$120,23</div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
