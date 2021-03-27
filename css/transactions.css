@@ -3,7 +3,7 @@
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    padding: 65px 50px 0px 50px;
+    padding: 43px 40px 0px 40px;
 }
 
 .transaction-container h2 {
@@ -12,9 +12,9 @@
     line-height: 30px;
 }
 
-.transaction-container-row {
+.transaction-container .row {
     height: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 24px;
 }
 
 .options {
@@ -54,6 +54,7 @@
 }
 
 .list-cards {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -71,15 +72,15 @@
 }
 
 .list-cards .item:first-child {
-    flex-grow: 3;
+    flex-grow: 2;
 }
 
 .list-cards .item:nth-child(2) {
-    flex-grow: 1;
+    flex-grow: 2;
 }
 
 .list-cards .item:last-child {
-    flex-grow: 4;
+    flex-grow: 5;
     text-align: right;
 }
 
@@ -89,8 +90,19 @@
     line-height: 26px;
 }
 
+.list-cards :before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0;
+    height: 0px;
+    width: auto;
+    border-bottom: 2px solid #dad8d8;
+}
+
 .list {
-    margin-top: 32px;
+    padding-top: 24px;
 }
 
 .list li {
@@ -140,14 +152,14 @@
     justify-content: space-between;
 }
 
-.transaction-info-company {
+.transaction-info .company {
     font-weight: 700;
     font-size: 11px;
     line-height: 13px;
     color: black;
 }
 
-.transaction-info-datetime {
+.transaction-info .datetime {
     font-weight: 500;
     font-size: 9px;
     line-height: 11px;
