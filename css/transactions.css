@@ -1,0 +1,164 @@
+.transaction-container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    padding: 65px 50px 0px 50px;
+}
+
+.transaction-container h2 {
+    display: inline;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.transaction-container-row {
+    height: 30px;
+    padding-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    float: right;
+    flex-wrap: nowrap;
+    width: 64px;
+}
+
+.search-bar {
+    background: #F7F8FA;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    height: 30px;
+    padding-left: 10px;
+    color: black;
+    line-height: 11px;
+    opacity: 1;
+    font-size: 9px;
+    font-weight: 400;
+    outline: none;
+}
+
+.search-bar:focus {
+    box-shadow: 0 0 0 1px #afafaf;
+}
+
+.search-bar::placeholder, .search-bar:-ms-input-placeholder, .search-bar::-ms-input-placeholder {
+    color: black;
+    line-height: 11px;
+    opacity: 1;
+    font-size: 9px;
+    font-weight: 400;
+}
+
+.list-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.list-cards h4 {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 10px;
+    color: #9A9A9A;
+}
+
+.list-cards .item {
+    text-align: left;
+}
+
+.list-cards .item:first-child {
+    flex-grow: 3;
+}
+
+.list-cards .item:nth-child(2) {
+    flex-grow: 1;
+}
+
+.list-cards .item:last-child {
+    flex-grow: 4;
+    text-align: right;
+}
+
+.list-cards .item p {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.list {
+    margin-top: 32px;
+}
+
+.list li {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 14px;
+    margin-bottom: 10px;
+    height: 34px;
+}
+
+.list li:before {
+    content: "";
+    position: absolute;
+    left: 25px;
+    right: 25px;
+    bottom: 0;
+    height: 1px;
+    width: auto;
+    border-bottom: 1px solid #F3F4F5;
+}
+
+.icon-container {
+    order: 1;
+    box-sizing: border-box;
+    width: 34px;
+    height: 34px;
+    left: 0px;
+    background: #FFFFFF;
+    box-shadow: 0 0 0 1px #F5F6F8;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+}
+
+.icon-container img {
+    width: 24px;
+    height: 24px;
+}
+
+.transaction-info {
+    order: 2;
+    width: 100%;
+    margin-left: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.transaction-info-company {
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 13px;
+    color: black;
+}
+
+.transaction-info-datetime {
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 11px;
+    color: #9A9A9A;
+}
+
+.transaction-cost {
+    order: 3;
+    width: 50px;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 34px;
+    text-align: center;
+}
