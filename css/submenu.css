@@ -1,16 +1,11 @@
-body {
-
-    /* font-family: 'Roboto', sans-serif; */
-    /* font-weight: 400; */
-}
-
 .submenu-container {
     background-color: #FAFAFA;
     padding: 43px 40px 0px 28px;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
     flex-grow: 1; /* TODO Ajustar depois de aplicar os componentes na Home*/
     height: inherit;
+    height: 100vh;
 }
 
 .submenu-container h3{
@@ -32,11 +27,16 @@ body {
 
 .submenu-container li a{
     display: flex;
-    color: #84888F; /* TODO Quando os links funcionarem, JS atua para a cor #000000 */
+    color: #84888F;
     text-decoration: none;
 }
 
-.submenu-container li a p { 
+.submenu-container li.active a,
+.submenu-container li a:hover {
+    color: #000000;
+}
+
+.submenu-container li a p {
     padding-left: 15px;
     height: 13px;
 }
@@ -47,5 +47,5 @@ body {
     margin: 30px 0;
     height: 1px;
     width: 100px;
-    border-bottom: 1px solid #bebebe;
+    border-bottom: 1px solid #F3F4F5;
 }

@@ -1,9 +1,3 @@
-body {
-
-    /* font-family: 'Roboto', sans-serif; */
-    /* font-weight: 400; */
-}
-
 .menu-container {
     background: #ffffff;
     border-right: 1px solid #F3F4F5;
@@ -12,7 +6,6 @@ body {
     justify-content: space-between;
     height: 100vh;
     padding: 18px;
-    width: 71px;
     box-sizing: border-box;
 }
 
