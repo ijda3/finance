@@ -8,18 +8,262 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-  <style>
-    body {
-      /* font-family: 'Roboto', sans-serif; */
-      /* font-weight: 400; */
-    }
-  </style>
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/structure.css">
+  <link rel="stylesheet" href="/css/menu.css">
+  <link rel="stylesheet" href="/css/submenu.css">
+  <link rel="stylesheet" href="/css/transactions.css">
+  <link rel="stylesheet" href="/css/overview.css">
 </head>
 <body>
-  <img src="/images/amazon.svg" />
+  <div class="root">
+    <nav>
+      <div class="menu-container">
+        <header>
+            <img src="/images/logo.svg" />
+            <nav>
+                <ul>
+                    <li class="line">
+                        <a href=""><img src="/images/balance.svg" alt=""></a>
+                        <a class="styleline" href=""><img src="/images/line.svg"alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="/images/credit_card.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="/images/graphic.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="/images/category.svg" alt=""></a>
+                    </li>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="user">
+            <img src="/images/user.jpg" />
+        </div>
+    </div>
+    </nav>
+    <aside>
+      <div class="submenu-container">
+        <div class="submenu-list">
+            <div class="list-contas">
+                <h3>Contas</h3>
+                <nav>
+                    <ul>
+						<li class="active">
+							<a href=""><img src="/images/itau.svg" alt=""><p>Itaú</p></a>
+						</li>
+                        <li >
+                            <a href=""><img src="/images/caixa.svg" alt=""><p>Caixa</p></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="/images/nubank.svg" alt=""><p>Nubank</p></a>
+                        </li>
+                        <li>
+                            <a href="" ><img src="/images/vector.svg" alt=""><p style="color: blue;">Adicionar</p></a>
+                        </li>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="list-categorias">
+                <h3>Categorias</h3>
+                <nav>
+                    <ul>
+                        <li >
+                            <a href=""><img src="/images/attractions-24px.svg" alt=""><p>Diversão</p></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="/images/directions_car-24px.svg" alt=""><p>Transporte</p></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="/images/home-24px.svg" alt=""><p>Moradia</p></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="/images/local_grocery_store-24px.svg" alt=""><p>Alimentação</p></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="/images/school-24px.svg" alt=""><p>Educação</p></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="/images/medication-24px.svg" alt=""><p>Saúde</p></a>
+                        </li>     <li>
+                            <a href="" ><img src="/images/vector.svg" alt=""><p style="color: blue;">Adicionar</p></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    </aside>
+    <main>
+		<div class="content">
+			<div class="transaction-container">
+				<div class="row">
+					<h2>Transações</h2>
+					<div class="options">
+						<img src="/images/date_range.svg" width="14px" height="14px">
+						<img src="/images/add_btn.svg">
+					</div>
+				</div>
+				<div class="row">
+					<form>
+						<input type="text" class="search-bar" placeholder="Pesquisar">
+					</form>
+				</div>
+				<div class="row list-cards">
+					<div class="item">
+						<h4>Receitas</h4>
+						<p>R$120,23</p>
+					</div>
+					<div class="item">
+						<h4>Despesas</h4>
+						<p>R$120,23</p>
+					</div>
+					<div class="item">
+						<h4>Saldo</h4>
+						<p>R$120,23</p>
+					</div>
+				</div>
+				<div class="list">
+					<ul>
+						<li>
+							<div class="icon-container"><img src="/images/amazon.svg"></div>
+							<div class="transaction-info">
+								<div class="company">Amazon</div>
+								<div class="datetime">17/07/2021 14:32</div>
+							</div>
+							<div class="transaction-cost">R$120,23</div>
+						</li>
+						<li>
+							<div class="icon-container"><img src="/images/uber.svg"></div>
+							<div class="transaction-info">
+								<div class="company">Uber</div>
+								<div class="datetime">17/07/2021 14:32</div>
+							</div>
+							<div class="transaction-cost">R$120,23</div>
+						</li>
+						<li>
+							<div class="icon-container"><img src="/images/copel.svg"></div>
+							<div class="transaction-info">
+								<div class="company">Copel</div>
+								<div class="datetime">17/07/2021 14:32</div>
+							</div>
+							<div class="transaction-cost">R$120,23</div>
+						</li>
+						<li>
+							<div class="icon-container"><img src="/images/amazon.svg"></div>
+							<div class="transaction-info">
+								<div class="company">Condomínio</div>
+								<div class="datetime">17/07/2021 14:32</div>
+							</div>
+							<div class="transaction-cost">R$120,23</div>
+						</li>
+						<li>
+							<div class="icon-container"><img src="/images/vivo.svg"></div>
+							<div class="transaction-info">
+								<div class="company">Internet</div>
+								<div class="datetime">17/07/2021 14:32</div>
+							</div>
+							<div class="transaction-cost">R$120,23</div>
+						</li>
+						<li>
+							<div class="icon-container"><img src="/images/netflix.svg"></div>
+							<div class="transaction-info">
+								<div class="company">Netflix</div>
+								<div class="datetime">17/07/2021 14:32</div>
+							</div>
+							<div class="transaction-cost">R$120,23</div>
+						</li>
+						<li>
+							<div class="icon-container"><img src="/images/xbox.svg"></div>
+							<div class="transaction-info">
+								<div class="company">Xbox Game Pass</div>
+								<div class="datetime">17/07/2021 14:32</div>
+							</div>
+							<div class="transaction-cost">R$120,23</div>
+						</li>
+						<li>
+							<div class="icon-container"><img src="/images/spotify.svg"></div>
+							<div class="transaction-info">
+								<div class="company">Spotify</div>
+								<div class="datetime">17/07/2021 14:32</div>
+							</div>
+							<div class="transaction-cost">R$120,23</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<aside>
+			<div class="overtranlat">
+				<div class="titulo"> Overview mensal </div>
+				<div class="grafc">
+					<div class="painel">
+						<div class="disp"> DESPESAS </div>
+						<div class="barra">
+							<div class="perc-75 despinat"></div>
+							<div class="perc-50 despinat"></div>
+							<div class="perc-100 despinat"></div>
+							<div class="perc-25 despinat"></div>
+							<div class="perc-50 despinat"></div>
+							<div class="perc-25 despinat"></div>
+							<div class="perc-75 dispect"></div>
+						</div>
+						<div class="valor"> R$ 123,23 </div>
+						<div class="valor2"> + R$ 71,22 </div>
+					</div>
+					<div class="painel">
+						<div class="disp"> RECEITAS </div>
+						<div class="barra">
+							<div class="perc-75 recinat"></div>
+							<div class="perc-50 recinat"></div>
+							<div class="perc-100 recinat"></div>
+							<div class="perc-25 recinat"></div>
+							<div class="perc-50 recinat"></div>
+							<div class="perc-25 recinat"></div>
+							<div class="perc-75 receit"></div>
+						</div>
+						<div>
+							<div class="valor"> R$ 123,23 </div>
+							<div class="valor2 receitcolor"> + R$ 71,22 </div>
+						</div>
+					</div>
+				</div>
+				<div class="despcateg">
+					<div class="titulo2"> Despesas por Categoria </div>
+					<div class="grafc2">
+						<div class="painel2 painellaranja">
+							<div class="circle-container alimentacao"></div>
+							<div class="caixa">
+								<div class="formatdesp">Alimentação</div>
+								<div class="valor3">123,23</div>
+							</div>
+							<div class="porcentagem">47%</div>
+						</div>
+						<div class="painel2 painelverde">
+							<div class="circle-container salario"></div>
+							<div class="caixa">
+								<div class="formatdesp">Salário</div>
+								<div class="valor3">123,23</div>
+							</div>
+							<div class="porcentagem1">47%</div>
+						</div>
+						<div class="painel2 painelazul">
+							<div class="circle-container assinaturas"></div>
+							<div class="caixa">
+								<div class="formatdesp">Assinaturas</div>
+								<div class="valor3">123,23</div>
+							</div>
+							<div class="porcentagem2">47%</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</aside>
+	</main>
+  </div>
 </body>
 </html>
-
-
-  

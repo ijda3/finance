@@ -3,8 +3,7 @@
     flex-direction: column;
     font-family: "Roboto",sans-serif;
     font-style: normal;
-    padding: 40px;
-    width: 900px;
+    width: 100%;
 }
 
 .despcateg{
@@ -28,7 +27,7 @@ margin: 40px 0px;
 
 .titulo{
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 19px;
     padding-bottom: 22px;
 }
@@ -65,7 +64,7 @@ margin: 40px 0px;
 }
 
 .painel2{
-    
+
     height: 30px;
     width: 290px;
     border-radius: 10px;
@@ -79,7 +78,7 @@ margin: 40px 0px;
 
 .disp{
     font-weight: 500;
-    font-size: 9px;
+    font-size: 11px;
     line-height: 11px;
     padding-bottom: 29px;
 }
@@ -87,7 +86,7 @@ margin: 40px 0px;
 .valor{
     padding-top: 43px;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 19px;
 
 }
@@ -95,14 +94,14 @@ margin: 40px 0px;
 .valor2{
     padding-top: 7px;
     font-weight: 500;
-    font-size: 9px;
+    font-size: 11px;
     line-height: 11px;
     color: #F58234;
 }
 
 .valor3{
     font-weight: 500;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 15px;
     color: #000000;
 }
@@ -179,25 +178,25 @@ margin: 40px 0px;
     height: 11px;
     width: 51px;
     font-weight: 500;
-    font-size: 9px;
+    font-size: 11px;
     line-height: 11px;
     color: #9999A0;
 }
 
 .porcentagem{
-    font-size: 10px;
+    font-size: 12px;
     color: #F69B5C;
     margin-left: auto;
 }
 
 .porcentagem1{
-    font-size: 10px;
+    font-size: 12px;
     color: #5DC06E;;
     margin-left: auto;
 }
 
 .porcentagem2{
-    font-size: 10px;
+    font-size: 12px;
     color: #02A4FF;
     margin-left: auto;
 }
