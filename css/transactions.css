@@ -1,15 +1,15 @@
 .transaction-container {
     display: flex;
     flex-direction: column;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    padding: 43px 40px 0px 40px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .transaction-container h2 {
     display: inline;
     font-weight: 700;
     line-height: 30px;
+    font-size: 22px;
 }
 
 .transaction-container .row {
@@ -36,9 +36,10 @@
     color: black;
     line-height: 11px;
     opacity: 1;
-    font-size: 9px;
+    font-size: 11px;
     font-weight: 400;
     outline: none;
+    box-sizing: border-box;
 }
 
 .search-bar:focus {
@@ -49,7 +50,7 @@
     color: black;
     line-height: 11px;
     opacity: 1;
-    font-size: 9px;
+    font-size: 11px;
     font-weight: 400;
 }
 
@@ -62,8 +63,8 @@
 
 .list-cards h4 {
     font-weight: 500;
-    font-size: 10px;
-    line-height: 10px;
+    font-size: 12px;
+    line-height: 12px;
     color: #9A9A9A;
 }
 
@@ -86,19 +87,19 @@
 
 .list-cards .item p {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 26px;
 }
 
-.list-cards :before {
+.list-cards:before {
     content: "";
     position: absolute;
     left: 0px;
     right: 0px;
     bottom: 0;
-    height: 0px;
+    height: 1px;
     width: auto;
-    border-bottom: 2px solid #dad8d8;
+    background-color: #dad8d8;
 }
 
 .list {
@@ -109,9 +110,7 @@
     display: flex;
     flex-direction: row;
     position: relative;
-    z-index: 1;
-    padding-bottom: 14px;
-    margin-bottom: 10px;
+    padding: 20px 0;
     height: 34px;
 }
 
@@ -123,7 +122,7 @@
     bottom: 0;
     height: 1px;
     width: auto;
-    border-bottom: 1px solid #F3F4F5;
+    background-color: #F3F4F5;
 }
 
 .icon-container {
@@ -154,14 +153,14 @@
 
 .transaction-info .company {
     font-weight: 700;
-    font-size: 11px;
+    font-size: 13px;
     line-height: 13px;
     color: black;
 }
 
 .transaction-info .datetime {
     font-weight: 500;
-    font-size: 9px;
+    font-size: 11px;
     line-height: 11px;
     color: #9A9A9A;
 }
@@ -170,7 +169,7 @@
     order: 3;
     width: 50px;
     font-weight: 500;
-    font-size: 11px;
+    font-size: 13px;
     line-height: 34px;
     text-align: center;
 }

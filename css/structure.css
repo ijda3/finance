@@ -1,0 +1,35 @@
+.root {
+    display: flex;
+    position: relative;
+}
+
+.root > nav {
+    position: fixed;
+    width: 71px;
+    z-index: 1;
+}
+
+.root > aside {
+    position: fixed;
+    margin-left: 71px;
+    width: 214px;
+    z-index: 1;
+}
+
+.root > main {
+    display: flex;
+    width: 100%;
+    margin-left: 285px;
+    padding: 43px 40px 40px;
+    gap: 40px;
+    justify-content: space-around;
+}
+
+.root main > .content {
+    min-width: 650px;
+    width: 100%;
+}
+
+.root main > aside {
+    width: 323px;
+}
