@@ -12,6 +12,11 @@
     mask: url(/images/form/arrow_drop_down.svg) no-repeat center;
 }
 
+.icon.icon-search {
+    -webkit-mask: url(/images/form/search.svg) no-repeat center;
+    mask: url(/images/form/search.svg) no-repeat center;
+}
+
 .input-text {
     height: 74px;
 }
