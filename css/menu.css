@@ -1,3 +1,23 @@
+.icon.icon-balance {
+    -webkit-mask: url(/images/balance.svg) no-repeat center;
+    mask: url(/images/balance.svg) no-repeat center;
+}
+
+.icon.icon-credit_card {
+    -webkit-mask: url(/images/credit_card.svg) no-repeat center;
+    mask: url(/images/credit_card.svg) no-repeat center;
+}
+
+.icon.icon-graphic {
+    -webkit-mask: url(/images/graphic.svg) no-repeat center;
+    mask: url(/images/graphic.svg) no-repeat center;
+}
+
+.icon.icon-category {
+    -webkit-mask: url(/images/category.svg) no-repeat center;
+    mask: url(/images/category.svg) no-repeat center;
+}
+
 .menu-container {
     background: #ffffff;
     border-right: 1px solid #F3F4F5;
@@ -9,6 +29,10 @@
     box-sizing: border-box;
 }
 
+.menu-container .logo {
+    width: 34px;
+}
+
 .menu-container nav {
     margin-top: 37px;
 }
@@ -18,6 +42,38 @@
     flex-direction: column;
     gap: 16px;
     margin: 5px;
+}
+
+.menu-container nav ul li {
+    position: relative;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-container nav ul li a {
+    display: block;
+}
+
+.menu-container nav ul li.active::before {
+    content: " ";
+    background-color: #323232;
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    right: -24px;
+}
+
+.menu-container nav ul li .icon {
+    background-color: #D3D6DA;
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.menu-container nav ul li.active .icon,
+.menu-container nav ul li:hover .icon {
+    background-color: #323232;
 }
 
 .menu-container .user {
@@ -32,11 +88,3 @@
     width: 100%;
 }
 
-.line {
-    display: flex;
-}
-
-.styleline {
-    margin-left: 22px;
-    margin-top: -7px;
-}
