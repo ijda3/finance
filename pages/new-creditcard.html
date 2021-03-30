@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Cadastrar Transação - Finance</title>
+	<title>Cadastrar Cartão de Crédito - Finance</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
 		integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
 		crossorigin="anonymous" />
@@ -29,10 +29,10 @@
 					</a>
 					<nav>
 						<ul>
-							<li class="active">
+							<li>
 								<a href="/index.html"><span class="icon icon-balance"></span></a>
 							</li>
-							<li>
+							<li class="active">
 								<a href="/pages/credit-card.html"><span class="icon icon-credit_card"></span></a>
 							</li>
 							<li>
@@ -53,29 +53,23 @@
 			<div class="submenu-container">
 				<div class="submenu-list">
 					<div class="list-contas">
-						<h3>Contas</h3>
+						<h3>Cartões de crédito</h3>
 						<nav>
 							<ul>
 								<li class="active">
-									<a href="/index.html"><img src="/images/itau.svg" alt="">
-										<p>Itaú</p>
+									<a href="/pages/credit-card.html"><img src="/images/visa.svg" alt="">
+										<p>Visa</p>
 									</a>
 								</li>
 								<li>
-									<a href="/index.html"><img src="/images/caixa.svg" alt="">
-										<p>Caixa</p>
+									<a href="/pages/credit-card.html"><img src="/images/mastercard.svg" alt="">
+										<p>Mastercard</p>
 									</a>
 								</li>
 								<li>
-									<a href="/index.html"><img src="/images/nubank.svg" alt="">
-										<p>Nubank</p>
-									</a>
-								</li>
-								<li>
-									<a href="/pages/new-account.html"><img src="/images/vector.svg" alt="">
+									<a href="/pages/new-creditcard.html"><img src="/images/vector.svg" alt="">
 										<p style="color: blue;">Adicionar</p>
 									</a>
-								</li>
 								</li>
 							</ul>
 						</nav>
@@ -123,54 +117,37 @@
 		<main>
 			<div class="content">
 				<div class="new-transaction">
-					<h1>Cadastrar transação</h1>
+					<h1>Cadastrar cartão de crédito</h1>
 					<form action="#">
 						<div class="row">
 							<div class="input-text">
-								<label for="description">Descrição</label>
+								<label for="name">Nome</label>
 								<div class="input-wrapper">
-									<input type="text" id="description" />
+									<input type="text" id="name" />
 								</div>
-								<span class="hint">Dica: Breve descrição da sua despesa</span>
 							</div>
 							<div class="input-text">
-								<label for="amount">Valor</label>
+								<label for="balance">Limite</label>
 								<div class="input-wrapper">
-									<input type="text" id="amount" />
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="input-text error">
-								<label for="due_date">Data de vencimento</label>
-								<div class="input-wrapper">
-									<input type="text" id="due_date" />
-									<div class="icon icon-calendar"></div>
-								</div>
-								<span class="error">Error</span>
-							</div>
-							<div class="input-text">
-								<label for="payday">Data de pagamento</label>
-								<div class="input-wrapper">
-									<input type="text" id="payday" />
-									<div class="icon icon-calendar"></div>
+									<input type="text" id="balance" />
 								</div>
 							</div>
 						</div>
 						<div class="row">
 							<div class="input-text">
-								<label for="category">Categoria</label>
+								<label for="flag">Bandeira</label>
 								<div class="input-wrapper">
-									<input type="text" id="category" />
+									<input type="text" id="flag" />
 									<div class="icon icon-arrow_drop_down"></div>
 								</div>
 							</div>
 							<div class="input-text">
-								<label for="wallet">Carteira</label>
+								<label for="close_date">Data de fechamento</label>
 								<div class="input-wrapper">
-									<input type="text" id="wallet" />
-									<div class="icon icon-arrow_drop_down"></div>
+									<input type="text" id="close_date" />
+									<div class="icon icon-calendar"></div>
 								</div>
+								<span class="hint">Dica: Data de fechamento do período da fatura </span>
 							</div>
 						</div>
 						<div class="row start-right">

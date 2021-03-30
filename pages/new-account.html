@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Cadastrar Transação - Finance</title>
+	<title>Cadastrar Conta - Finance</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
 		integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
 		crossorigin="anonymous" />
@@ -123,52 +123,27 @@
 		<main>
 			<div class="content">
 				<div class="new-transaction">
-					<h1>Cadastrar transação</h1>
+					<h1>Cadastrar conta</h1>
 					<form action="#">
 						<div class="row">
 							<div class="input-text">
-								<label for="description">Descrição</label>
+								<label for="name">Nome</label>
 								<div class="input-wrapper">
-									<input type="text" id="description" />
+									<input type="text" id="name" />
 								</div>
-								<span class="hint">Dica: Breve descrição da sua despesa</span>
 							</div>
 							<div class="input-text">
-								<label for="amount">Valor</label>
+								<label for="balance">Saldo inicial</label>
 								<div class="input-wrapper">
-									<input type="text" id="amount" />
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="input-text error">
-								<label for="due_date">Data de vencimento</label>
-								<div class="input-wrapper">
-									<input type="text" id="due_date" />
-									<div class="icon icon-calendar"></div>
-								</div>
-								<span class="error">Error</span>
-							</div>
-							<div class="input-text">
-								<label for="payday">Data de pagamento</label>
-								<div class="input-wrapper">
-									<input type="text" id="payday" />
-									<div class="icon icon-calendar"></div>
+									<input type="text" id="balance" />
 								</div>
 							</div>
 						</div>
 						<div class="row">
 							<div class="input-text">
-								<label for="category">Categoria</label>
+								<label for="bank">Banco</label>
 								<div class="input-wrapper">
-									<input type="text" id="category" />
-									<div class="icon icon-arrow_drop_down"></div>
-								</div>
-							</div>
-							<div class="input-text">
-								<label for="wallet">Carteira</label>
-								<div class="input-wrapper">
-									<input type="text" id="wallet" />
+									<input type="text" id="bank" />
 									<div class="icon icon-arrow_drop_down"></div>
 								</div>
 							</div>
