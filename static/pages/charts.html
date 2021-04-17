@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gráficos</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+		integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+		crossorigin="anonymous" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/static/css/global.css">
+	<link rel="stylesheet" href="/static/css/structure.css">
+	<link rel="stylesheet" href="/static/css/menu.css">
+	<link rel="stylesheet" href="/static/css/submenu.css">
+	<link rel="stylesheet" href="/static/css/charts.css">
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body>
+	<div class="root">
+		<nav>
+			<div class="menu-container">
+				<header>
+					<a href="/static/index.html">
+						<img class="logo" src="/static/images/logo.png" />
+					</a>
+					<nav>
+						<ul>
+							<li>
+								<a href="/static/index.html"><span class="icon icon-balance"></span></a>
+							</li>
+							<li>
+								<a href="/static/pages/credit-card.html"><span class="icon icon-credit_card"></span></a>
+							</li>
+							<li class="active">
+								<a href=""><span class="icon icon-graphic"></span></a>
+							</li>
+							<li>
+								<a href=""><span class="icon icon-category"></span></a>
+							</li>
+						</ul>
+					</nav>
+				</header>
+				<div class="user">
+					<img src="/static/images/user.jpg" />
+				</div>
+			</div>
+		</nav>
+		<aside>
+			<div class="submenu-container">
+				<div class="submenu-list">
+					<div class="list-contas">
+						<h3>Contas</h3>
+						<nav>
+							<ul>
+								<li class="active">
+									<a href="/static/index.html"><img src="/static/images/itau.svg" alt="">
+										<p>Itaú</p>
+									</a>
+								</li>
+								<li>
+									<a href="/static/index.html"><img src="/static/images/caixa.svg" alt="">
+										<p>Caixa</p>
+									</a>
+								</li>
+								<li>
+									<a href="/static/index.html"><img src="/static/images/nubank.svg" alt="">
+										<p>Nubank</p>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="list-contas">
+						<h3>Cartões de crédito</h3>
+						<nav>
+							<ul>
+								<li class="active">
+									<a href="/static/pages/credit-card.html"><img src="/static/images/visa.svg" alt="">
+										<p>Visa</p>
+									</a>
+								</li>
+								<li>
+									<a href="/static/pages/credit-card.html"><img src="/static/images/mastercard.svg" alt="">
+										<p>Mastercard</p>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</aside>
+		<main>
+			<div class="content">
+				<div class="charts">
+					<div class="charts row"><h2>Gráficos</h2></div>
+					<div class="charts row">
+						<div class="chart-container half-width">
+							<script type="text/javascript">
+   							google.charts.load('current', {'packages':['corechart']});
+   							google.charts.setOnLoadCallback(drawVisualization);
+							function drawVisualization() {
+   								var data = google.visualization.arrayToDataTable([
+   							    	['Categoria', 'Total', { role: 'style' }, { role: 'annotation'}, 'Progresso', { role: 'style' }],
+   							    	['Alimentação', 3275, 'color: #27BC40; stroke-color: #27BC40', '75%', 1233, 'stroke-color: #27BC40; stroke-width: 2'],
+									['Moradia', 1275, 'color: #F58234; stroke-color: #F58234', '100%', 0,  'stroke-color: #F58234; stroke-width: 2',],
+									['Assinaturas', 150, 'color: #e028a6; stroke-color: #e028a6', '39%', 200,  'stroke-color: #e028a6'],
+   							    	['Cartões de Crédito', 1450, 'color: #df99ff; stroke-color: #df99ff; font-color: white', '49%', 1300,  'stroke-color: #df99ff'],
+									['Água, luz, internet', 300, 'color: #02A4FF; stroke-color: #02A4FF', '73%', 125,  'stroke-color: #02A4FF'],
+   								]);
+   							    var options = {
+   							    	titlePosition: 'none',
+									isStacked: 'percent',
+									series: {
+										1: {color: 'white'}
+									},
+									legend: 'none',
+									chartArea: {top: 5},
+									hAxis: {
+										textStyle : {
+    						        		fontSize: 11,
+											maxLines: 1,
+    						    		},
+									},
+									annotations: {
+    						                alwaysOutside: true,
+											highContrast: true,
+											textStyle: {
+    						                  bold: true
+    						                }
+									}
+   							    };
+								var container = document.getElementById('chart_div');
+   							    var chart = new google.visualization.ColumnChart(container);
+								chart.draw(data, options);
+   							}
+   							</script>
+
+
+							<div class="chart-title"><h2>Progresso por categoria</h2></div>
+							<div id="chart_div"></div>
+						</div>
+						<div class="chart-container half-width">
+								<script type="text/javascript">
+									google.charts.load('current', {'packages':['corechart']});
+									google.charts.setOnLoadCallback(drawProgressHChart);
+ 									function drawProgressHChart() {
+										var data = google.visualization.arrayToDataTable([
+											['Categoria', 'Total', { role: 'style' }, { role: 'annotation'}, 'Progresso', { role: 'style' }],
+											['Alimentação', 3275, 'color: #27BC40; stroke-color: #27BC40', '75%', 1233, 'stroke-color: #27BC40; stroke-width: 2'],
+										 	['Moradia', 1275, 'color: #F58234; stroke-color: #F58234', '100%', 0,  'stroke-color: #F58234; stroke-width: 2',],
+										 	['Assinaturas', 150, 'color: #e028a6; stroke-color: #e028a6', '39%', 200,  'stroke-color: #e028a6'],
+											['Cartões de Crédito', 1450, 'color: #df99ff; stroke-color: #df99ff; font-color: white', '49%', 1300,  'stroke-color: #df99ff'],
+										 	['Serviços', 300, 'color: #02A4FF; stroke-color: #02A4FF', '73%', 125,  'stroke-color: #02A4FF'],
+										]);
+										var options = {
+											titlePosition: 'none',
+											isStacked: 'percent',
+										 	series: {
+												1: {color: 'white'}
+										 	},
+										 	legend: 'none',
+										 	chartArea: {top: 5},
+										 	hAxis: {
+												textStyle : {
+												fontSize: 11,
+												maxLines: 1,
+												},
+											},
+											annotations: {
+												alwaysOutside: true,
+												highContrast: true,
+												textStyle: {
+													bold: true
+												}
+											}
+										};
+										var container = document.getElementById('progress_h_chart_div');
+										var chart = new google.visualization.BarChart(container);
+										chart.draw(data, options);
+									}
+								</script>
+
+							<div class="chart-title"><h2>Progresso por categoria</h2></div>
+							<div id="progress_h_chart_div"></div>
+						</div>
+					</div>
+					<div class="charts row">
+						<div class="chart-container half-width">
+							<script type="text/javascript">
+   								google.charts.load('current', {'packages':['corechart']});
+   								google.charts.setOnLoadCallback(drawIncomeChart);
+								function drawIncomeChart() {
+   									var data = google.visualization.arrayToDataTable([
+   								    	['Categorias', 'Valor'],
+										['Salário',  4275],
+										['Rendimentos',  375],
+   								    	['Aluguel',  1350],
+										['Pensão',  1750]
+   									]);
+   								    var options = {
+   								    	titlePosition: 'none',
+									  	pieHole: 0.4,
+										slices: [{color: '#27BC40'}, {color: '#F58234'}, {color: '#e028a6'}, {color: '#df99ff'}, {color: '#02A4FF'}],
+										legend: {position: 'right'},
+										label: {position: 'out'},
+										chartArea: {'width': '90%', 'height': '90%', 'right': '0'},
+
+										pieSliceText: 'value',
+										pieStartAngle: 270
+   								    };
+									var container = document.getElementById('income_chart_div');
+   								    var chart = new google.visualization.PieChart(container);
+									chart.draw(data, options);
+   								}
+   								</script>
+							<div class="chart-title"><h2>Receitas por categoria</h2></div>
+							<div id="income_chart_div"></div>
+						</div>
+						<div class="chart-container half-width">
+							   	<script type="text/javascript">
+   									google.charts.load('current', {'packages':['corechart']});
+   									google.charts.setOnLoadCallback(drawExpensePieChart);
+									function drawExpensePieChart() {
+   										var data = google.visualization.arrayToDataTable([
+   									    	['Categorias', 'Valor'],
+											['Alimentação',  3275],
+											['Moradia',  1275],
+   									    	['Assinaturas',  350],
+   									    	['Água, luz, internet',  425],
+											['Cartões de Crédito',  2750]
+   										]);
+
+   									    var options = {
+   									    	titlePosition: 'none',
+										  	pieHole: 0.4,
+											slices: [{color: '#27BC40'}, {color: '#F58234'}, {color: '#e028a6'}, {color: '#df99ff'}, {color: '#02A4FF'}],
+											legend: {position: 'right'},
+											label: {position: 'out'},
+											chartArea: {'width': '90%', 'height': '90%', 'right': '0'},
+											pieSliceText: 'value',
+											pieStartAngle: 270
+   									    };
+
+										var container = document.getElementById('expense_chart_div');
+   									    var chart = new google.visualization.PieChart(container);
+										chart.draw(data, options);
+									}
+   									</script>
+
+							<div class="chart-title"><h2>Despesas por categoria</h2></div>
+							<div id="expense_chart_div"></div>
+						</div>
+					</div>
+					<div class="chart-container full-width">
+						<script type="text/javascript">
+   							google.charts.load('current', {'packages':['corechart']});
+   							google.charts.setOnLoadCallback(drawYearChart);
+							function drawYearChart() {
+   								var data = google.visualization.arrayToDataTable([
+   							    	['Mês', 'Receitas', 'Despesas', 'Saldo'],
+   							    	['11/20',  4275,      1938,        2222],
+   							    	['12/20',  4275,      1320,        2599],
+   							    	['01/21',  4275,      5467,        -987],
+   							    	['02/21',  4275,      1320,        1615],
+   							    	['03/21',  4275,      1467,        -1229],
+									['04/21',  4275,      1320,        1629],
+									['05/21',  4275,      1783,        1129],
+									['06/21',  4275,      1320,        -1029],
+									['07/21',  4275,      1783,         629],
+									['08/21',  4275,      1320,        1629],
+									['09/21',  4275,      1783,         629],
+									['10/21',  4275,      1320,         629],
+   								]);
+   							    var options = {
+   							    	titlePosition: 'none',
+									pointSize: 10,
+									series: {
+										0: {targetAxisIndex: 0, color: '#BEEBC6'},
+										1: {color: '#FCDAC2'},
+										2: {targetAxisIndex: 1, type: 'line', lineWidth: 3, color: '#02A4FF'},
+									},
+								  	seriesType: 'bars',
+   							      	vAxes: {
+										0: {title: 'Valor', viewWindow: {max: 7000}, ticks: [{v:0, f:'0'}, {v:1000, f:'1000'}, {v:2000, f:'2000'}, {v:3000, f:'3000'}, {v:4000, f:'4000'}, {v:5000, f:'5000'}, {v:6000, f:'6000'}, {v:7000, f:'7000'}]},
+									  	1: {title: 'Saldo Mensal', viewWindow: {min: -2800, max:2800}, ticks: [{v:0, f:'0'}]},
+								  	},
+   							      	hAxis: {title: 'Mês'},
+									// chartArea: {width: '80%', height: '100%'}
+   							    };
+								var container = document.getElementById('year_chart_div');
+   							    var chart = new google.visualization.ComboChart(container);
+								google.visualization.events.addListener(chart, 'ready', changeBorderRadius);
+   								google.visualization.events.addListener(chart, 'select', changeBorderRadius);
+   								google.visualization.events.addListener(chart, 'onmouseover', changeBorderRadius);
+   								google.visualization.events.addListener(chart, 'onmouseout', changeBorderRadius);
+   								function changeBorderRadius() {
+   									chartColumns = container.getElementsByTagName('rect');
+   								  	Array.prototype.forEach.call(chartColumns, function(column) {
+   								    	column.setAttribute('rx', 9);
+   								    	column.setAttribute('ry', 9);
+   								  	});
+   								}
+								chart.draw(data, options);
+   							}
+   						</script>
+						<div class="chart-title"><h2>Últimos 12 meses</h2></div>
+						<div id="year_chart_div"></div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+</body>
+
+</html>
