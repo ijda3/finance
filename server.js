@@ -5,5 +5,5 @@ const app = express();
 app.use(express.static(path.join(__dirname, './static')));
 
 app.listen(3000, () => {
-	console.log("http://localhost:3000/");
+	console.log("http://localhost:5000/");
 });
