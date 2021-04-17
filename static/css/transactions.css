@@ -173,3 +173,11 @@
     line-height: 34px;
     text-align: center;
 }
+
+.negative{
+    color: red;
+}
+
+.positive{
+    color: green;
+}
