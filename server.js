@@ -4,6 +4,6 @@ const app = express();
 
 app.use(express.static(path.join(__dirname, './static')));
 
-app.listen(3000, () => {
+app.listen(5000, () => {
 	console.log("http://localhost:5000/");
 });
