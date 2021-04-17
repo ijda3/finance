@@ -167,11 +167,11 @@
 
 .transaction-cost {
     order: 3;
-    width: 50px;
+    width: 75px;
     font-weight: 500;
     font-size: 13px;
     line-height: 34px;
-    text-align: center;
+    text-align: right;
 }
 
 .negative{
