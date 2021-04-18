@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	{{>head}}
+	<link rel="stylesheet" href="/css/new-transaction.css">
+</head>
+
+<body>
+	<div class="root">
+		{{>menu}}
+		{{>submenu}}
+		<main>
+			<div class="content">
+				<div class="new-transaction">
+					<h1>Cadastrar conta</h1>
+					<form action="#">
+						<div class="row">
+							<div class="input-text">
+								<label for="name">Nome</label>
+								<div class="input-wrapper">
+									<input type="text" id="name" />
+								</div>
+							</div>
+							<div class="input-text">
+								<label for="balance">Saldo inicial</label>
+								<div class="input-wrapper">
+									<input type="text" id="balance" />
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-text">
+								<label for="bank">Banco</label>
+								<div class="input-wrapper">
+									<input type="text" id="bank" />
+									<div class="icon icon-arrow_drop_down"></div>
+								</div>
+							</div>
+						</div>
+						<div class="row start-right">
+							<div class="button-group">
+								<button class="secondary" type="reset">Cancelar</button>
+								<button type="submit">Salvar</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+	</div>
+</body>
+
+</html>
