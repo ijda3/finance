@@ -1,8 +1,11 @@
-const express = require("express");
-const path = require("path");
+import express from "express";
+import path from "path";
+import livereload from "livereload";
+import livereloadMiddleware from "connect-livereload";
+import mustacheExpress from "mustache-express";
+
 const app = express();
-const mustacheExpress = require("mustache-express");
-const port = process.env.PORT || 3000;
+const __dirname = path.resolve();
 const VIEWS_PATH = __dirname + "/views";
 
 app.engine("mst", mustacheExpress(VIEWS_PATH + "/partials", ".mst"));
@@ -10,6 +13,13 @@ app.set("view engine", "mst");
 app.set("views", VIEWS_PATH);
 app.disable("view cache");
 
+const hotServer = livereload.createServer({
+  debug: true,
+});
+
+hotServer.watch(__dirname);
+
+app.use(livereloadMiddleware());
 app.use(express.static(path.join(__dirname, "./static")));
 
 app.get("/", function (req, res) {
@@ -34,6 +44,8 @@ app.get("/:page", function (req, res) {
     menu_charts: page == "charts",
   });
 });
+
+const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
   console.log(`http://localhost:${port}/`);
