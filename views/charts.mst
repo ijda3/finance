@@ -2,30 +2,30 @@
 <html lang="en">
 
 <head>
-	{{>head}}
-	<title>Gráficos</title>
-	<link rel="stylesheet" href="/css/charts.css">
-	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    {{>head}}
+    <title>Gráficos</title>
+    <link rel="stylesheet" href="/css/charts.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 
 <body>
-	<div class="root">
-		{{>menu}}
-		{{>submenu}}
+    <div class="root">
+        {{>menu}}
+        {{>submenu}}
 
-		<main>
-			<div class="content">
-				<div class="charts">
-					<div class="charts row">
-						<h2>Gráficos</h2>
-					</div>
-					{{>charts_progresso_categoria}}
-					{{>charts_despesa_receita}}
-					{{>charts_ultimos_12_meses}}
-				</div>
-			</div>
-		</main>
-	</div>
+        <main>
+            <div class="content">
+                <div class="charts">
+                    <div class="charts row">
+                        <h2>Gráficos</h2>
+                    </div>
+                    {{>charts_progresso_categoria}}
+                    {{>charts_despesa_receita}}
+                    {{>charts_ultimos_12_meses}}
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
 
 </html>

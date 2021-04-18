@@ -1,51 +1,51 @@
 <div class="charts row">
-	<div class="chart-container half-width">
-		<!-- Aqui NERO -->
-	</div>
-	<div class="chart-container half-width">
-		<script type="text/javascript">
-			google.charts.load('current', { 'packages': ['corechart'] });
-			google.charts.setOnLoadCallback(drawProgressHChart);
-			function drawProgressHChart() {
-				var data = google.visualization.arrayToDataTable([
-					['Categoria', 'Total', { role: 'style' }, { role: 'annotation' }, 'Progresso', { role: 'style' }],
-					['Alimentação', 3275, 'color: #27BC40; stroke-color: #27BC40', '75%', 1233, 'stroke-color: #27BC40; stroke-width: 2'],
-					['Moradia', 1275, 'color: #F58234; stroke-color: #F58234', '100%', 0, 'stroke-color: #F58234; stroke-width: 2',],
-					['Assinaturas', 150, 'color: #e028a6; stroke-color: #e028a6', '39%', 200, 'stroke-color: #e028a6'],
-					['Cartões de Crédito', 1450, 'color: #df99ff; stroke-color: #df99ff; font-color: white', '49%', 1300, 'stroke-color: #df99ff'],
-					['Serviços', 300, 'color: #02A4FF; stroke-color: #02A4FF', '73%', 125, 'stroke-color: #02A4FF'],
-				]);
-				var options = {
-					titlePosition: 'none',
-					isStacked: 'percent',
-					series: {
-						1: { color: 'white' }
-					},
-					legend: 'none',
-					chartArea: { top: 5 },
-					hAxis: {
-						textStyle: {
-							fontSize: 11,
-							maxLines: 1,
-						},
-					},
-					annotations: {
-						alwaysOutside: true,
-						highContrast: true,
-						textStyle: {
-							bold: true
-						}
-					}
-				};
-				var container = document.getElementById('progress_h_chart_div');
-				var chart = new google.visualization.BarChart(container);
-				chart.draw(data, options);
-			}
-		</script>
+    <div class="chart-container half-width">
+        <!-- Aqui NERO -->
+    </div>
+    <div class="chart-container half-width">
+        <script type="text/javascript">
+            google.charts.load('current', { 'packages': ['corechart'] });
+            google.charts.setOnLoadCallback(drawProgressHChart);
+            function drawProgressHChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ['Categoria', 'Total', { role: 'style' }, { role: 'annotation' }, 'Progresso', { role: 'style' }],
+                    ['Alimentação', 3275, 'color: #27BC40; stroke-color: #27BC40', '75%', 1233, 'stroke-color: #27BC40; stroke-width: 2'],
+                    ['Moradia', 1275, 'color: #F58234; stroke-color: #F58234', '100%', 0, 'stroke-color: #F58234; stroke-width: 2',],
+                    ['Assinaturas', 150, 'color: #e028a6; stroke-color: #e028a6', '39%', 200, 'stroke-color: #e028a6'],
+                    ['Cartões de Crédito', 1450, 'color: #df99ff; stroke-color: #df99ff; font-color: white', '49%', 1300, 'stroke-color: #df99ff'],
+                    ['Serviços', 300, 'color: #02A4FF; stroke-color: #02A4FF', '73%', 125, 'stroke-color: #02A4FF'],
+                ]);
+                var options = {
+                    titlePosition: 'none',
+                    isStacked: 'percent',
+                    series: {
+                        1: { color: 'white' }
+                    },
+                    legend: 'none',
+                    chartArea: { top: 5 },
+                    hAxis: {
+                        textStyle: {
+                            fontSize: 11,
+                            maxLines: 1,
+                        },
+                    },
+                    annotations: {
+                        alwaysOutside: true,
+                        highContrast: true,
+                        textStyle: {
+                            bold: true
+                        }
+                    }
+                };
+                var container = document.getElementById('progress_h_chart_div');
+                var chart = new google.visualization.BarChart(container);
+                chart.draw(data, options);
+            }
+        </script>
 
-		<div class="chart-title">
-			<h2>Progresso por categoria</h2>
-		</div>
-		<div id="progress_h_chart_div"></div>
-	</div>
+        <div class="chart-title">
+            <h2>Progresso por categoria</h2>
+        </div>
+        <div id="progress_h_chart_div"></div>
+    </div>
 </div>

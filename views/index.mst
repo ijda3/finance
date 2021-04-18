@@ -2,194 +2,194 @@
 <html lang="en">
 
 <head>
-	{{>head}}
+    {{>head}}
 </head>
 
 <body>
-	<div class="root">
-		{{>menu}}
-		{{>submenu}}
+    <div class="root">
+        {{>menu}}
+        {{>submenu}}
 
-		<main>
-			<div class="content">
-				<div class="transaction-container">
-					<div class="row">
-						<h2>Transações</h2>
-						<div class="options">
-							<img src="/images/date_range.svg" width="14px" height="14px">
-							<a href="/new-transaction"><img src="/images/add_btn.svg" /></a>
-						</div>
-					</div>
-					<div class="row">
-						<form>
-							<div class="input-text">
-								<div class="input-wrapper">
-									<input type="text" id="category" placeholder="Pesquisar" />
-									<div class="icon icon-search"></div>
-								</div>
-							</div>
-						</form>
-					</div>
-					<div class="row list-cards">
-						<div class="item">
-							<h4>Receitas</h4>
-							<p>R$3479,08</p>
-						</div>
-						<div class="item">
-							<h4>Despesas</h4>
-							<p>R$1446,42</p>
-						</div>
-						<div class="item">
-							<h4>Saldo</h4>
-							<p>R$2032,81</p>
-						</div>
-					</div>
-					<div class="list">
-						<ul>
-							<li>
-								<div class="icon-container"><img src="/images/amazon.svg"></div>
-								<div class="transaction-info">
-									<div class="company">Salário</div>
-									<div class="datetime">01/04/2021 14:00</div>
-								</div>
-								<div class="transaction-cost positive">+R$3479,08</div>
-							</li>
-							<li>
-								<div class="icon-container"><img src="/images/amazon.svg"></div>
-								<div class="transaction-info">
-									<div class="company">Amazon</div>
-									<div class="datetime">02/04/2021 17:50</div>
-								</div>
-								<div class="transaction-cost negative">-R$274,90</div>
-							</li>
-							<li>
-								<div class="icon-container"><img src="/images/uber.svg"></div>
-								<div class="transaction-info">
-									<div class="company">Uber</div>
-									<div class="datetime">05/04/2021 07:30</div>
-								</div>
-								<div class="transaction-cost negative">-R$16,47</div>
-							</li>
-							<li>
-								<div class="icon-container"><img src="/images/copel.svg"></div>
-								<div class="transaction-info">
-									<div class="company">Copel</div>
-									<div class="datetime">07/04/2021 08:00</div>
-								</div>
-								<div class="transaction-cost negative">-R$113,35</div>
-							</li>
-							<li>
-								<div class="icon-container"><img src="/images/amazon.svg"></div>
-								<div class="transaction-info">
-									<div class="company">Condomínio</div>
-									<div class="datetime">10/04/2021 12:00</div>
-								</div>
-								<div class="transaction-cost negative">-R$800,00</div>
-							</li>
-							<li>
-								<div class="icon-container"><img src="/images/vivo.svg"></div>
-								<div class="transaction-info">
-									<div class="company">Internet</div>
-									<div class="datetime">15/04/2021 09:30</div>
-								</div>
-								<div class="transaction-cost negative">-R$149,90</div>
-							</li>
-							<li>
-								<div class="icon-container"><img src="/images/netflix.svg"></div>
-								<div class="transaction-info">
-									<div class="company">Netflix</div>
-									<div class="datetime">20/04/2021 12:30</div>
-								</div>
-								<div class="transaction-cost negative">-R$45,90</div>
-							</li>
-							<li>
-								<div class="icon-container"><img src="/images/xbox.svg"></div>
-								<div class="transaction-info">
-									<div class="company">Xbox Game Pass</div>
-									<div class="datetime">23/04/2021 15:45</div>
-								</div>
-								<div class="transaction-cost negative">-R$29,00</div>
-							</li>
-							<li>
-								<div class="icon-container"><img src="/images/spotify.svg"></div>
-								<div class="transaction-info">
-									<div class="company">Spotify</div>
-									<div class="datetime">30/04/2021 14:32</div>
-								</div>
-								<div class="transaction-cost negative">-R$16,90</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<aside>
-				<div class="overtranlat">
-					<div class="titulo"> Overview mensal </div>
-					<div class="grafc">
-						<div class="painel">
-							<div class="disp"> DESPESAS </div>
-							<div class="barra">
-								<div class="perc-75 despinat"></div>
-								<div class="perc-50 despinat"></div>
-								<div class="perc-100 despinat"></div>
-								<div class="perc-25 despinat"></div>
-								<div class="perc-50 despinat"></div>
-								<div class="perc-25 despinat"></div>
-								<div class="perc-75 dispect"></div>
-							</div>
-							<div class="valor"> R$ 1446,42 </div>
-							<div class="valor2"> + R$ 71,22 </div>
-						</div>
-						<div class="painel">
-							<div class="disp"> RECEITAS </div>
-							<div class="barra">
-								<div class="perc-75 recinat"></div>
-								<div class="perc-50 recinat"></div>
-								<div class="perc-100 recinat"></div>
-								<div class="perc-25 recinat"></div>
-								<div class="perc-50 recinat"></div>
-								<div class="perc-25 recinat"></div>
-								<div class="perc-75 receit"></div>
-							</div>
-							<div>
-								<div class="valor"> R$ 3479,08 </div>
-								<div class="valor2 receitcolor"> + R$ 71,22 </div>
-							</div>
-						</div>
-					</div>
-					<div class="despcateg">
-						<div class="titulo2"> Despesas por Categoria </div>
-						<div class="grafc2">
-							<div class="painel2 painellaranja">
-								<div class="circle-container alimentacao"></div>
-								<div class="caixa">
-									<div class="formatdesp">Alimentação</div>
-									<div class="valor3">550,00</div>
-								</div>
-								<div class="porcentagem">47%</div>
-							</div>
-							<div class="painel2 painelverde">
-								<div class="circle-container salario"></div>
-								<div class="caixa">
-									<div class="formatdesp">Salário</div>
-									<div class="valor3">3479,08</div>
-								</div>
-								<div class="porcentagem1">47%</div>
-							</div>
-							<div class="painel2 painelazul">
-								<div class="circle-container assinaturas"></div>
-								<div class="caixa">
-									<div class="formatdesp">Assinaturas</div>
-									<div class="valor3">90,00</div>
-								</div>
-								<div class="porcentagem2">47%</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</aside>
-		</main>
-	</div>
+        <main>
+            <div class="content">
+                <div class="transaction-container">
+                    <div class="row">
+                        <h2>Transações</h2>
+                        <div class="options">
+                            <img src="/images/date_range.svg" width="14px" height="14px">
+                            <a href="/new-transaction"><img src="/images/add_btn.svg" /></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <form>
+                            <div class="input-text">
+                                <div class="input-wrapper">
+                                    <input type="text" id="category" placeholder="Pesquisar" />
+                                    <div class="icon icon-search"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row list-cards">
+                        <div class="item">
+                            <h4>Receitas</h4>
+                            <p>R$3479,08</p>
+                        </div>
+                        <div class="item">
+                            <h4>Despesas</h4>
+                            <p>R$1446,42</p>
+                        </div>
+                        <div class="item">
+                            <h4>Saldo</h4>
+                            <p>R$2032,81</p>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li>
+                                <div class="icon-container"><img src="/images/amazon.svg"></div>
+                                <div class="transaction-info">
+                                    <div class="company">Salário</div>
+                                    <div class="datetime">01/04/2021 14:00</div>
+                                </div>
+                                <div class="transaction-cost positive">+R$3479,08</div>
+                            </li>
+                            <li>
+                                <div class="icon-container"><img src="/images/amazon.svg"></div>
+                                <div class="transaction-info">
+                                    <div class="company">Amazon</div>
+                                    <div class="datetime">02/04/2021 17:50</div>
+                                </div>
+                                <div class="transaction-cost negative">-R$274,90</div>
+                            </li>
+                            <li>
+                                <div class="icon-container"><img src="/images/uber.svg"></div>
+                                <div class="transaction-info">
+                                    <div class="company">Uber</div>
+                                    <div class="datetime">05/04/2021 07:30</div>
+                                </div>
+                                <div class="transaction-cost negative">-R$16,47</div>
+                            </li>
+                            <li>
+                                <div class="icon-container"><img src="/images/copel.svg"></div>
+                                <div class="transaction-info">
+                                    <div class="company">Copel</div>
+                                    <div class="datetime">07/04/2021 08:00</div>
+                                </div>
+                                <div class="transaction-cost negative">-R$113,35</div>
+                            </li>
+                            <li>
+                                <div class="icon-container"><img src="/images/amazon.svg"></div>
+                                <div class="transaction-info">
+                                    <div class="company">Condomínio</div>
+                                    <div class="datetime">10/04/2021 12:00</div>
+                                </div>
+                                <div class="transaction-cost negative">-R$800,00</div>
+                            </li>
+                            <li>
+                                <div class="icon-container"><img src="/images/vivo.svg"></div>
+                                <div class="transaction-info">
+                                    <div class="company">Internet</div>
+                                    <div class="datetime">15/04/2021 09:30</div>
+                                </div>
+                                <div class="transaction-cost negative">-R$149,90</div>
+                            </li>
+                            <li>
+                                <div class="icon-container"><img src="/images/netflix.svg"></div>
+                                <div class="transaction-info">
+                                    <div class="company">Netflix</div>
+                                    <div class="datetime">20/04/2021 12:30</div>
+                                </div>
+                                <div class="transaction-cost negative">-R$45,90</div>
+                            </li>
+                            <li>
+                                <div class="icon-container"><img src="/images/xbox.svg"></div>
+                                <div class="transaction-info">
+                                    <div class="company">Xbox Game Pass</div>
+                                    <div class="datetime">23/04/2021 15:45</div>
+                                </div>
+                                <div class="transaction-cost negative">-R$29,00</div>
+                            </li>
+                            <li>
+                                <div class="icon-container"><img src="/images/spotify.svg"></div>
+                                <div class="transaction-info">
+                                    <div class="company">Spotify</div>
+                                    <div class="datetime">30/04/2021 14:32</div>
+                                </div>
+                                <div class="transaction-cost negative">-R$16,90</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <aside>
+                <div class="overtranlat">
+                    <div class="titulo"> Overview mensal </div>
+                    <div class="grafc">
+                        <div class="painel">
+                            <div class="disp"> DESPESAS </div>
+                            <div class="barra">
+                                <div class="perc-75 despinat"></div>
+                                <div class="perc-50 despinat"></div>
+                                <div class="perc-100 despinat"></div>
+                                <div class="perc-25 despinat"></div>
+                                <div class="perc-50 despinat"></div>
+                                <div class="perc-25 despinat"></div>
+                                <div class="perc-75 dispect"></div>
+                            </div>
+                            <div class="valor"> R$ 1446,42 </div>
+                            <div class="valor2"> + R$ 71,22 </div>
+                        </div>
+                        <div class="painel">
+                            <div class="disp"> RECEITAS </div>
+                            <div class="barra">
+                                <div class="perc-75 recinat"></div>
+                                <div class="perc-50 recinat"></div>
+                                <div class="perc-100 recinat"></div>
+                                <div class="perc-25 recinat"></div>
+                                <div class="perc-50 recinat"></div>
+                                <div class="perc-25 recinat"></div>
+                                <div class="perc-75 receit"></div>
+                            </div>
+                            <div>
+                                <div class="valor"> R$ 3479,08 </div>
+                                <div class="valor2 receitcolor"> + R$ 71,22 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="despcateg">
+                        <div class="titulo2"> Despesas por Categoria </div>
+                        <div class="grafc2">
+                            <div class="painel2 painellaranja">
+                                <div class="circle-container alimentacao"></div>
+                                <div class="caixa">
+                                    <div class="formatdesp">Alimentação</div>
+                                    <div class="valor3">550,00</div>
+                                </div>
+                                <div class="porcentagem">47%</div>
+                            </div>
+                            <div class="painel2 painelverde">
+                                <div class="circle-container salario"></div>
+                                <div class="caixa">
+                                    <div class="formatdesp">Salário</div>
+                                    <div class="valor3">3479,08</div>
+                                </div>
+                                <div class="porcentagem1">47%</div>
+                            </div>
+                            <div class="painel2 painelazul">
+                                <div class="circle-container assinaturas"></div>
+                                <div class="caixa">
+                                    <div class="formatdesp">Assinaturas</div>
+                                    <div class="valor3">90,00</div>
+                                </div>
+                                <div class="porcentagem2">47%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </div>
 </body>
 
 </html>

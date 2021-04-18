@@ -1,37 +1,37 @@
 <div class="list-categorias">
-	<h3>Categorias</h3>
-	<nav>
-		<ul>
-			<li>
-				<a href=""><img src="/images/attractions-24px.svg" alt="">
-					<p>Diversão</p>
-				</a>
-			</li>
-			<li>
-				<a href=""><img src="/images/directions_car-24px.svg" alt="">
-					<p>Transporte</p>
-				</a>
-			</li>
-			<li>
-				<a href=""><img src="/images/home-24px.svg" alt="">
-					<p>Moradia</p>
-				</a>
-			</li>
-			<li>
-				<a href=""><img src="/images/local_grocery_store-24px.svg" alt="">
-					<p>Alimentação</p>
-				</a>
-			</li>
-			<li>
-				<a href=""><img src="/images/school-24px.svg" alt="">
-					<p>Educação</p>
-				</a>
-			</li>
-			<li>
-				<a href=""><img src="/images/medication-24px.svg" alt="">
-					<p>Saúde</p>
-				</a>
-			</li>
-		</ul>
-	</nav>
+    <h3>Categorias</h3>
+    <nav>
+        <ul>
+            <li>
+                <a href=""><img src="/images/attractions-24px.svg" alt="">
+                    <p>Diversão</p>
+                </a>
+            </li>
+            <li>
+                <a href=""><img src="/images/directions_car-24px.svg" alt="">
+                    <p>Transporte</p>
+                </a>
+            </li>
+            <li>
+                <a href=""><img src="/images/home-24px.svg" alt="">
+                    <p>Moradia</p>
+                </a>
+            </li>
+            <li>
+                <a href=""><img src="/images/local_grocery_store-24px.svg" alt="">
+                    <p>Alimentação</p>
+                </a>
+            </li>
+            <li>
+                <a href=""><img src="/images/school-24px.svg" alt="">
+                    <p>Educação</p>
+                </a>
+            </li>
+            <li>
+                <a href=""><img src="/images/medication-24px.svg" alt="">
+                    <p>Saúde</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
 </div>
