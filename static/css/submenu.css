@@ -49,3 +49,10 @@
     width: 80%;
     border-bottom: 1px solid #F3F4F5;
 }
+
+.dot {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: inline-block;
+}

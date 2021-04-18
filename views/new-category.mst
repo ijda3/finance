@@ -3,20 +3,17 @@
 
 <head>
     {{>head}}
-    <link rel="stylesheet" href="/css/new-transaction.css">
+    <link rel="stylesheet" href="/css/new-category.css">
 </head>
 
 <body>
     <div class="root">
-        {{>logo}}
         {{>menu}}
-        {{>user}}
         {{>submenu}}
-
         <main>
             <div class="content">
-                <div class="new-transaction">
-                    <h1>Cadastrar conta</h1>
+                <div class="new-category">
+                    <h1>Cadastrar categoria</h1>
                     <form action="#">
                         <div class="row">
                             <div class="input input-text">
@@ -25,19 +22,12 @@
                                     <input type="text" id="name" />
                                 </div>
                             </div>
-                            <div class="input input-text">
-                                <label for="balance">Saldo inicial</label>
-                                <div class="input-wrapper">
-                                    <input type="text" id="balance" />
-                                </div>
-                            </div>
                         </div>
                         <div class="row">
-                            <div class="input input-text">
-                                <label for="bank">Banco</label>
+                            <div class="input input-color">
+                                <label for="color">Cor</label>
                                 <div class="input-wrapper">
-                                    <input type="text" id="bank" />
-                                    <div class="icon icon-arrow_drop_down"></div>
+                                    <input type="color" id="color" />
                                 </div>
                             </div>
                         </div>
