@@ -18,73 +18,66 @@
     mask: url(/images/category.svg) no-repeat center;
 }
 
-.menu-container {
+.root > nav {
     background: #ffffff;
-    border-right: 1px solid #F3F4F5;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
-    padding: 18px;
+    padding: 16px;
     box-sizing: border-box;
+    border-top: 1px solid #F3F4F5;
 }
 
-.menu-container .logo {
-    width: 34px;
-}
-
-.menu-container nav {
-    margin-top: 37px;
-}
-
-.menu-container nav ul {
+.root > nav ul {
     display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin: 5px;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
 }
 
-.menu-container nav ul li {
-    position: relative;
-    height: 40px;
+.root > nav ul li {
+    height: 39px;
+    width: 40px;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.menu-container nav ul li a {
+.root > nav ul li a {
     display: block;
 }
 
-.menu-container nav ul li.active::before {
-    content: " ";
-    background-color: #323232;
-    width: 2px;
-    height: 100%;
-    position: absolute;
-    right: -24px;
-}
-
-.menu-container nav ul li .icon {
+.root > nav ul li .icon {
     background-color: #D3D6DA;
     width: 24px;
     height: 24px;
     display: block;
 }
 
-.menu-container nav ul li.active .icon,
-.menu-container nav ul li:hover .icon {
+.root > nav ul li.active .icon,
+.root > nav ul li:hover .icon {
     background-color: #323232;
 }
 
-.menu-container .user {
-    border-radius: 17px;
-    height: 34px;
-    width: 34px;
-    overflow: hidden;
-}
+@media (min-width: 800px ) {
+    .root > nav {
+        border-top: initial;
+        flex-direction: column;
+        padding-top: 37px;
+    }
 
-.menu-container .user img {
-    height: 100%;
-    width: 100%;
-}
+    .root > nav ul {
+        flex-direction: column;
+        gap: 16px;
+    }
 
+    .root > nav ul li {
+        position: relative;
+    }
+
+    .root > nav ul li.active::before {
+        content: " ";
+        background-color: #323232;
+        width: 2px;
+        height: 100%;
+        position: absolute;
+        right: -14px;
+    }
+}

@@ -7,7 +7,9 @@
 
 <body>
     <div class="root">
+        {{>logo}}
         {{>menu}}
+        {{>user}}
         {{>submenu}}
 
         <main>

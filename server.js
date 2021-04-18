@@ -1,9 +1,11 @@
-const express = require("express");
-const path = require("path");
+import express from "express";
+import path from "path";
+import mustacheExpress from "mustache-express";
+
 const app = express();
-const mustacheExpress = require("mustache-express");
-const port = process.env.PORT || 3000;
+const __dirname = path.resolve();
 const VIEWS_PATH = __dirname + "/views";
+const PRODUCTION = process.env.NODE_ENV === "production";
 
 app.engine("mst", mustacheExpress(VIEWS_PATH + "/partials", ".mst"));
 app.set("view engine", "mst");
@@ -34,6 +36,8 @@ app.get("/:page", function (req, res) {
     menu_charts: page == "charts",
   });
 });
+
+const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
   console.log(`http://localhost:${port}/`);
