@@ -1,0 +1,24 @@
+<div class="list-contas">
+    <h3>Cartões de crédito</h3>
+    <nav>
+        <ul>
+            <li class="active">
+                <a href="/credit-card"><img src="/images/visa.svg" alt="">
+                    <p>Visa</p>
+                </a>
+            </li>
+            <li>
+                <a href="/credit-card"><img src="/images/mastercard.svg" alt="">
+                    <p>Mastercard</p>
+                </a>
+            </li>
+            {{^chart_page}}
+                <li>
+                    <a href="/new-creditcard"><img src="/images/vector.svg" alt="">
+                        <p style="color: blue;">Adicionar</p>
+                    </a>
+                </li>
+            {{/chart_page}}
+        </ul>
+    </nav>
+</div>

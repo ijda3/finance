@@ -1,0 +1,28 @@
+<nav>
+    <div class="menu-container">
+        <header>
+            <a href="/">
+                <img class="logo" src="/images/logo.png" />
+            </a>
+            <nav>
+                <ul>
+                    <li class="{{#menu_conta}}active{{/menu_conta}}">
+                        <a href="/"><span class="icon icon-balance"></span></a>
+                    </li>
+                    <li class="{{#menu_credit_card}}active{{/menu_credit_card}}">
+                        <a href="/credit-card"><span class="icon icon-credit_card"></span></a>
+                    </li>
+                    <li class="{{#menu_charts}}active{{/menu_charts}}">
+                        <a href="/charts"><span class="icon icon-graphic"></span></a>
+                    </li>
+                    <li>
+                        <a href=""><span class="icon icon-category"></span></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="user">
+            <img src="/images/user.jpg" />
+        </div>
+    </div>
+</nav>

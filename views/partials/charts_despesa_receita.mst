@@ -1,0 +1,71 @@
+<div class="charts row">
+    <div class="chart-container half-width">
+        <script type="text/javascript">
+            google.charts.load('current', { 'packages': ['corechart'] });
+            google.charts.setOnLoadCallback(drawIncomeChart);
+            function drawIncomeChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ['Categorias', 'Valor'],
+                    ['Salário', 4275],
+                    ['Rendimentos', 375],
+                    ['Aluguel', 1350],
+                    ['Pensão', 1750]
+                ]);
+                var options = {
+                    titlePosition: 'none',
+                    pieHole: 0.4,
+                    slices: [{ color: '#27BC40' }, { color: '#F58234' }, { color: '#e028a6' }, { color: '#df99ff' }, { color: '#02A4FF' }],
+                    legend: { position: 'right' },
+                    label: { position: 'out' },
+                    chartArea: { 'width': '90%', 'height': '90%', 'right': '0' },
+
+                    pieSliceText: 'value',
+                    pieStartAngle: 270
+                };
+                var container = document.getElementById('income_chart_div');
+                var chart = new google.visualization.PieChart(container);
+                chart.draw(data, options);
+            }
+        </script>
+        <div class="chart-title">
+            <h2>Receitas por categoria</h2>
+        </div>
+        <div id="income_chart_div"></div>
+    </div>
+    <div class="chart-container half-width">
+        <script type="text/javascript">
+            google.charts.load('current', { 'packages': ['corechart'] });
+            google.charts.setOnLoadCallback(drawExpensePieChart);
+            function drawExpensePieChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ['Categorias', 'Valor'],
+                    ['Alimentação', 3275],
+                    ['Moradia', 1275],
+                    ['Assinaturas', 350],
+                    ['Água, luz, internet', 425],
+                    ['Cartões de Crédito', 2750]
+                ]);
+
+                var options = {
+                    titlePosition: 'none',
+                    pieHole: 0.4,
+                    slices: [{ color: '#27BC40' }, { color: '#F58234' }, { color: '#e028a6' }, { color: '#df99ff' }, { color: '#02A4FF' }],
+                    legend: { position: 'right' },
+                    label: { position: 'out' },
+                    chartArea: { 'width': '90%', 'height': '90%', 'right': '0' },
+                    pieSliceText: 'value',
+                    pieStartAngle: 270
+                };
+
+                var container = document.getElementById('expense_chart_div');
+                var chart = new google.visualization.PieChart(container);
+                chart.draw(data, options);
+            }
+        </script>
+
+        <div class="chart-title">
+            <h2>Despesas por categoria</h2>
+        </div>
+        <div id="expense_chart_div"></div>
+    </div>
+</div>
