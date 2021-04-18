@@ -16,14 +16,14 @@
                     <h1>Cadastrar transação</h1>
                     <form action="#">
                         <div class="row">
-                            <div class="input-text">
+                            <div class="input input-text">
                                 <label for="description">Descrição</label>
                                 <div class="input-wrapper">
                                     <input type="text" id="description" />
                                 </div>
                                 <span class="hint">Dica: Breve descrição da sua despesa</span>
                             </div>
-                            <div class="input-text">
+                            <div class="input input-text">
                                 <label for="amount">Valor</label>
                                 <div class="input-wrapper">
                                     <input type="text" id="amount" />
@@ -31,7 +31,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="input-text error">
+                            <div class="input input-text error">
                                 <label for="due_date">Data de vencimento</label>
                                 <div class="input-wrapper">
                                     <input type="text" id="due_date" />
@@ -39,7 +39,7 @@
                                 </div>
                                 <span class="error">Error</span>
                             </div>
-                            <div class="input-text">
+                            <div class="input input-text">
                                 <label for="payday">Data de pagamento</label>
                                 <div class="input-wrapper">
                                     <input type="text" id="payday" />
@@ -48,14 +48,14 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="input-text">
+                            <div class="input input-text">
                                 <label for="category">Categoria</label>
                                 <div class="input-wrapper">
                                     <input type="text" id="category" />
                                     <div class="icon icon-arrow_drop_down"></div>
                                 </div>
                             </div>
-                            <div class="input-text">
+                            <div class="input input-text">
                                 <label for="wallet">Carteira</label>
                                 <div class="input-wrapper">
                                     <input type="text" id="wallet" />

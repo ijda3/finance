@@ -17,16 +17,16 @@
     mask: url(/images/form/search.svg) no-repeat center;
 }
 
-.input-text {
+.input {
     height: 74px;
 }
 
-.input-text label {
+.input label {
     font-size: 14px;
     font-weight: 500;
 }
 
-.input-text .input-wrapper {
+.input .input-wrapper {
     margin-top: 6px;
     border-radius: 3px;
     border: 1px solid #C4C4C4;
@@ -44,6 +44,18 @@
     box-sizing: border-box;
     border: none;
     padding: 5px 29px 5px 10px;
+    background: none;
+}
+
+.input-color .input-wrapper {
+    width: 20%;
+}
+
+.input-color .input-wrapper input {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
     background: none;
 }
 

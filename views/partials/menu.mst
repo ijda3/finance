@@ -15,9 +15,6 @@
                     <li class="{{#menu_charts}}active{{/menu_charts}}">
                         <a href="/charts"><span class="icon icon-graphic"></span></a>
                     </li>
-                    <li>
-                        <a href=""><span class="icon icon-category"></span></a>
-                    </li>
                 </ul>
             </nav>
         </header>
