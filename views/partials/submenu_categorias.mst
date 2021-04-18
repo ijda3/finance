@@ -1,40 +1,62 @@
-<div class="list-categorias">
+<div class="">
     <h3>Categorias</h3>
     <nav>
         <ul>
             <li>
-                <a href=""><span class="dot" style="background-color: #EEF4EF"></span>
+                <a href="">
+                    <span class="dot" style="background-color: #EEF4EF"></span>
                     <p>Receitas</p>
+                </a>
+                <a href="/new-category">
+                    <img class="pencil" style="display: none" src="/images/pencil.svg" alt="" title="Editar">
                 </a>
             </li>
             <li>
                 <a href=""><span class="dot" style="background-color: #F1FAFF"></span>
                     <p>Assinaturas</p>
                 </a>
+                <a href="/new-category">
+                    <img class="pencil" style="display: none" src="/images/pencil.svg" alt="" title="Editar">
+                </a>
             </li>
             <li>
                 <a href=""><span class="dot" style="background-color: #fff1f1"></span>
                     <p>Transporte</p>
+                </a>
+                <a href="/new-category">
+                    <img class="pencil" style="display: none" src="/images/pencil.svg" alt="" title="Editar">
                 </a>
             </li>
             <li>
                 <a href=""><span class="dot" style="background-color: #fcf1ff"></span>
                     <p>Moradia</p>
                 </a>
+                <a href="/new-category">
+                    <img class="pencil" style="display: none" src="/images/pencil.svg" alt="" title="Editar">
+                </a>
             </li>
             <li>
                 <a href=""><span class="dot" style="background-color: #FAF7F5"></span>
                     <p>Alimentação</p>
+                </a>
+                <a href="/new-category">
+                    <img class="pencil" style="display: none" src="/images/pencil.svg" alt="" title="Editar">
                 </a>
             </li>
             <li>
                 <a href=""><span class="dot" style="background-color: #f1fffe"></span>
                     <p>Educação</p>
                 </a>
+                <a href="/new-category">
+                    <img class="pencil" style="display: none" src="/images/pencil.svg" alt="" title="Editar">
+                </a>
             </li>
             <li>
                 <a href=""><span class="dot" style="background-color: #fffff1"></span>
                     <p>Saúde</p>
+                </a>
+                <a href="/new-category">
+                    <img class="pencil" style="display: none" src="/images/pencil.svg" alt="" title="Editar">
                 </a>
             </li>
              {{^chart_page}}

@@ -29,11 +29,13 @@
     display: flex;
     color: #84888F;
     text-decoration: none;
+    width: 100%;
 }
 
 .submenu-container li.active a,
 .submenu-container li a:hover {
     color: #000000;
+    transition: 0.3s;
 }
 
 .submenu-container li a p {
@@ -55,4 +57,15 @@
     width: 20px;
     border-radius: 50%;
     display: inline-block;
+}
+
+.pencil {
+    margin-left: auto;
+    margin-right: 10px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.pencil:hover {
+    opacity: 1
 }
