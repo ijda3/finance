@@ -8,21 +8,24 @@
 
 <body>
     <div class="root">
+        {{>logo}}
         {{>menu}}
+        {{>user}}
         {{>submenu}}
+
         <main>
             <div class="content">
                 <div class="new-transaction">
                     <h1>Cadastrar cartão de crédito</h1>
                     <form action="#">
                         <div class="row">
-                            <div class="input-text">
+                            <div class="input input-text">
                                 <label for="name">Nome</label>
                                 <div class="input-wrapper">
                                     <input type="text" id="name" />
                                 </div>
                             </div>
-                            <div class="input-text">
+                            <div class="input input-text">
                                 <label for="balance">Limite</label>
                                 <div class="input-wrapper">
                                     <input type="text" id="balance" />
@@ -30,14 +33,14 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="input-text">
+                            <div class="input input-text">
                                 <label for="flag">Bandeira</label>
                                 <div class="input-wrapper">
                                     <input type="text" id="flag" />
                                     <div class="icon icon-arrow_drop_down"></div>
                                 </div>
                             </div>
-                            <div class="input-text">
+                            <div class="input input-text">
                                 <label for="close_date">Data de fechamento</label>
                                 <div class="input-wrapper">
                                     <input type="text" id="close_date" />

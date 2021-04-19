@@ -1,0 +1,18 @@
+.new-category {
+    width: 700px;
+}
+
+.new-category h1 {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.new-category .row {
+    display: flex;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.new-category .row > * {
+    flex-grow: 1;
+}

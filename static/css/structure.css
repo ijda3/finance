@@ -1,35 +1,151 @@
 .root {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto 70px;
+    grid-template-rows: 70px auto 70px;
+    grid-template-areas:
+        "logo logo user"
+        "main main main"
+        "menu menu menu";
     position: relative;
+    height: 100vh;
+}
+
+.root > header {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 70px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #F3F4F5;
+    box-shadow: 0 1px 2px #F3F4F5;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+.root > header img {
+    width: 35px;
 }
 
 .root > nav {
+    grid-area: menu;
     position: fixed;
-    width: 71px;
-    z-index: 1;
+    bottom: 0;
+    height: 70px;
+    width: 100vw;
+    background-color: #FFFFFF;
+    border-top: 1px solid #F3F4F5;
+    box-shadow: 0 -1px 2px #F3F4F5;
+    z-index: 3;
+    box-sizing: border-box;
+}
+
+.root > .user {
+    grid-area: user;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    height: 70px;
+    width: 74px;
+    z-index: 3;
+    box-sizing: border-box;
+}
+
+.root > .user .circle {
+    border-radius: 17px;
+    height: 34px;
+    width: 34px;
+    overflow: hidden;
+}
+
+.root > .user img {
+    height: 100%;
+    width: 100%;
 }
 
 .root > aside {
-    position: fixed;
-    margin-left: 71px;
-    width: 214px;
-    z-index: 1;
+    grid-area: submenu;
+    display: none;
 }
 
 .root > main {
+    grid-area: main;
     display: flex;
-    width: 100%;
-    margin-left: 285px;
-    padding: 43px 40px 40px;
-    gap: 40px;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
     justify-content: space-around;
+    box-sizing: border-box;
 }
 
-.root main > .content {
-    min-width: 650px;
-    width: 100%;
+@media (min-width: 800px) {
+    .root {
+        grid-template-columns: 71px 214px auto;
+        grid-template-rows: 70px auto 70px;
+        grid-template-areas:
+            "logo submenu main"
+            "menu submenu main"
+            "user submenu main";
+    }
+
+    .root > header {
+        width: 70px;
+        border-bottom: initial;
+        box-shadow: initial;
+    }
+
+    .root > nav {
+        top:70px;
+        width: 70px;
+        height: calc(100% - 140px);
+        border-top: initial;
+        box-shadow: initial;
+    }
+
+    .root > .user {
+        left: 0;
+        bottom: 0;
+    }
+
+    .root > aside {
+        left: 70px;
+        width: 214px;
+        position: fixed;
+        display: inherit;
+        z-index: 1;
+    }
+
+    .root > header, .root > nav, .root > .user {
+        border-right: 1px solid #F3F4F5;
+    }
+
+    .root > main {
+        padding: 24px;
+        gap: 24px;
+    }
 }
 
-.root main > aside {
-    width: 323px;
+@media (min-width: 1200px) {
+    .root > main {
+        flex-direction: row;
+        padding: 24px;
+        gap: 24px;
+    }
+
+    .root > main > .content {
+        flex: 2;
+    }
+
+    .root > main > aside {
+        flex: 1;
+    }
+
+    .root > main > aside > .overtranlat {
+        top: 24px;
+        position: sticky;
+    }
 }

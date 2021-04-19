@@ -1,0 +1,5 @@
+<div class="user">
+    <span class="circle">
+        <img src="/images/user.jpg" />
+    </span>
+</div>

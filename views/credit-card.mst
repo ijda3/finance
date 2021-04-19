@@ -8,7 +8,9 @@
 
 <body>
     <div class="root">
+        {{>logo}}
         {{>menu}}
+        {{>user}}
         {{>submenu}}
 
         <main>
@@ -23,7 +25,7 @@
                     </div>
                     <div class="row">
                         <form>
-                            <div class="input-text">
+                            <div class="input input-text">
                                 <div class="input-wrapper">
                                     <input type="text" id="category" placeholder="Pesquisar" />
                                     <div class="icon icon-search"></div>

@@ -7,7 +7,9 @@
 
 <body>
     <div class="root">
+        {{>logo}}
         {{>menu}}
+        {{>user}}
         {{>submenu}}
 
         <main>
@@ -22,7 +24,7 @@
                     </div>
                     <div class="row">
                         <form>
-                            <div class="input-text">
+                            <div class="input input-text">
                                 <div class="input-wrapper">
                                     <input type="text" id="category" placeholder="Pesquisar" />
                                     <div class="icon icon-search"></div>
@@ -47,10 +49,15 @@
                     <div class="list">
                         <ul>
                             <li>
-                                <div class="icon-container"><img src="/images/amazon.svg"></div>
+                                <div class="icon-container"><img src="/images/payment.svg"></div>
                                 <div class="transaction-info">
                                     <div class="company">Salário</div>
                                     <div class="datetime">01/04/2021 14:00</div>
+                                </div>
+                                <div class="chip-list">
+                                    <div class="chip" style="background-color: #EEF4EF">
+                                        <p>Receitas</p>
+                                    </div>
                                 </div>
                                 <div class="transaction-cost positive">+R$3479,08</div>
                             </li>
@@ -60,6 +67,11 @@
                                     <div class="company">Amazon</div>
                                     <div class="datetime">02/04/2021 17:50</div>
                                 </div>
+                                <div class="chip-list">
+                                    <div class="chip" style="background-color: #FAF7F5">
+                                        <p>Alimentação</p>
+                                    </div>
+                                </div>
                                 <div class="transaction-cost negative">-R$274,90</div>
                             </li>
                             <li>
@@ -67,6 +79,11 @@
                                 <div class="transaction-info">
                                     <div class="company">Uber</div>
                                     <div class="datetime">05/04/2021 07:30</div>
+                                </div>
+                                <div class="chip-list">
+                                    <div class="chip" style="background-color: #fff1f1">
+                                        <p>Transporte</p>
+                                    </div>
                                 </div>
                                 <div class="transaction-cost negative">-R$16,47</div>
                             </li>
@@ -76,6 +93,11 @@
                                     <div class="company">Copel</div>
                                     <div class="datetime">07/04/2021 08:00</div>
                                 </div>
+                                <div class="chip-list">
+                                    <div class="chip" style="background-color: #fcf1ff">
+                                        <p>Moradia</p>
+                                    </div>
+                                </div>
                                 <div class="transaction-cost negative">-R$113,35</div>
                             </li>
                             <li>
@@ -83,6 +105,11 @@
                                 <div class="transaction-info">
                                     <div class="company">Condomínio</div>
                                     <div class="datetime">10/04/2021 12:00</div>
+                                </div>
+                                <div class="chip-list">
+                                    <div class="chip" style="background-color: #fcf1ff">
+                                        <p>Moradia</p>
+                                    </div>
                                 </div>
                                 <div class="transaction-cost negative">-R$800,00</div>
                             </li>
@@ -92,6 +119,14 @@
                                     <div class="company">Internet</div>
                                     <div class="datetime">15/04/2021 09:30</div>
                                 </div>
+                                <div class="chip-list">
+                                    <div class="chip" style="background-color: #fcf1ff">
+                                        <p>Moradia</p>
+                                    </div>
+                                    <div class="chip" style="background-color: #F1FAFF">
+                                        <p>Assinaturas</p>
+                                    </div>
+                                </div>
                                 <div class="transaction-cost negative">-R$149,90</div>
                             </li>
                             <li>
@@ -99,6 +134,11 @@
                                 <div class="transaction-info">
                                     <div class="company">Netflix</div>
                                     <div class="datetime">20/04/2021 12:30</div>
+                                </div>
+                                <div class="chip-list">
+                                    <div class="chip" style="background-color: #F1FAFF">
+                                        <p>Assinaturas</p>
+                                    </div>
                                 </div>
                                 <div class="transaction-cost negative">-R$45,90</div>
                             </li>
@@ -108,6 +148,11 @@
                                     <div class="company">Xbox Game Pass</div>
                                     <div class="datetime">23/04/2021 15:45</div>
                                 </div>
+                                <div class="chip-list">
+                                    <div class="chip" style="background-color: #F1FAFF">
+                                        <p>Assinaturas</p>
+                                    </div>
+                                </div>
                                 <div class="transaction-cost negative">-R$29,00</div>
                             </li>
                             <li>
@@ -115,6 +160,11 @@
                                 <div class="transaction-info">
                                     <div class="company">Spotify</div>
                                     <div class="datetime">30/04/2021 14:32</div>
+                                </div>
+                                <div class="chip-list">
+                                    <div class="chip" style="background-color: #F1FAFF">
+                                        <p>Assinaturas</p>
+                                    </div>
                                 </div>
                                 <div class="transaction-cost negative">-R$16,90</div>
                             </li>
