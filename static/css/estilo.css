@@ -1,0 +1,48 @@
+.grafico{
+    display: flex;
+    flex-direction: row;
+}
+
+.painel{
+    font-family: 'Roboto', sans-serif;
+    padding-top: 16px;
+    padding-left: 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 110px;
+    width: 200px;
+    box-sizing: border-box;
+}
+
+.valor{
+    padding-top: 10px;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 10px;
+
+}
+
+.detalhes{
+    padding-top: 30px;
+    font-weight: 500;
+    font-size: 15px;
+
+}
+
+.painelroxo{
+    background: #6c41bd;
+}
+
+.painelazul{
+    background: #3b8fdf;
+}
+
+.painelvermelho{
+    background: #e2492e;
+}
+
+.painelazul-escuro{
+    background: #1305dd;
+}

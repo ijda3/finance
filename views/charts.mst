@@ -5,6 +5,7 @@
     {{>head}}
     <title>Gráficos</title>
     <link rel="stylesheet" href="/css/charts.css">
+    <link rel="stylesheet" href="/css/estilo.css">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 
