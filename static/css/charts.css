@@ -3,11 +3,11 @@
     flex-direction: column;
     padding: 0 0 20px 0;
     margin: 0;
-	height: 220px;
+    height: 220px;
 }
 
 .full-width {
-    width: 800px;
+    width: 400px;
 }
 
 .half-width {
@@ -29,7 +29,7 @@
     justify-content: flex-start;
     padding: 0;
     margin: 0;
-    width: 800px;
+    width: 400px;
 }
 
 .charts h2 {
@@ -40,8 +40,75 @@
 
 .charts .row {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 0 0 20px 0;
     margin: 0;
 }
 
+@media (min-width: 800px ) {
+    .charts .row {
+        flex-direction: row;
+    }
+    .full-width {
+        width: 800px;
+    }
+
+    .charts {
+        width: 800px;
+    }
+}
+
+.grafico {
+    display: flex;
+    flex-direction: row;
+    margin: 4px auto 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 150px;
+    width: 280px;
+}
+
+.painel {
+    padding: 10px;
+    margin: 0;
+    border-radius: 7px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    width: 135px;
+    height: 65px;
+    box-sizing: border-box;
+    font-size: 10px;
+    color: white;
+}
+
+.valor {
+    padding-top: 2px;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.detalhes {
+    margin-top: auto;
+    font-size: 10px;
+}
+
+.painel-receita {
+    background: rgba(39, 188, 64, 1);
+    background: linear-gradient(100deg, rgba(39, 188, 64, 1, 1) 0%, rgba(91, 204, 110, 100) 100%);
+}
+
+.painel-despesa {
+    background: rgb(247,150,85);
+    background: linear-gradient(100deg, rgba(247,150,85,1) 0%, rgba(245,130,52,1) 100%);
+}
+
+.painel-saldo {
+    background: rgb(65,185,253);
+    background: linear-gradient(100deg, rgba(65,185,253,1) 0%, rgba(2,164,255,1) 100%);
+}
+
+.painel-variacao {
+    background: rgb(36,114,255);
+    background: linear-gradient(100deg, rgba(36,114,255,1) 0%, rgba(14,0,210,1) 100%);
+}

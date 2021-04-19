@@ -1,27 +1,21 @@
 <div class="charts row">
     <div class="chart-container half-width">
         <div class="chart-title">
-            <h2>Tabela por categoria</h2>
-            <div class="grafico">
-                <div class="painel painelroxo"> Receita Mensal 
-                  <div class="valor"> R$ 1008,05 </div>
-                  <div class="detalhes"> Mais detalhes </div>
-                </div>
-                <div class="painel painelazul"> Despesa Mensal
-                  <div class="valor"> R$ -877,71 </div>
-                  <div class="detalhes"> Mais detalhes </div>
-                </div>
+            <h2>Visão Geral</h2>
+        </div>
+        <div class="grafico">
+            <div class="painel painel-receita"> RECEITA MENSAL
+                <div class="valor"> R$ 7250,35 </div>
             </div>
-            <div class="grafico">
-              <div class="painel painelvermelho"> Previsão de Saldo
-                <div class="valor"> R$ 1748,97 </div>
-                  <div class="detalhes"> Mais detalhes </div>
-              </div>
-              <div class="painel painelazul-escuro"> Variação Mensal
-                <div class="valor"> R$ 741,81 </div>
-                  <div class="detalhes"> Mais detalhes </div>
-              </div>
-          </div> 
+            <div class="painel painel-despesa"> DESPESA MENSAL
+                <div class="valor"> R$ 6125,71 </div>
+            </div>
+            <div class="painel painel-saldo"> PREVISÃO DE SALDO
+                <div class="valor"> R$ 1109,76 </div>
+            </div>
+            <div class="painel painel-variacao"> VARIAÇÃO MENSAL
+                <div class="valor"> R$ 321,81 </div>
+            </div>
         </div>
     </div>
     <div class="chart-container half-width">
@@ -44,7 +38,7 @@
                         1: { color: 'white' }
                     },
                     legend: 'none',
-                    chartArea: { top: 5 },
+                    chartArea: { top: 5, width: '60%'},
                     hAxis: {
                         textStyle: {
                             fontSize: 11,
@@ -53,6 +47,7 @@
                     },
                     annotations: {
                         alwaysOutside: true,
+                        stem: {color: 'transparent'},
                         highContrast: true,
                         textStyle: {
                             bold: true
@@ -61,6 +56,15 @@
                 };
                 var container = document.getElementById('progress_h_chart_div');
                 var chart = new google.visualization.BarChart(container);
+
+                google.visualization.events.addListener(chart, 'ready', function () {
+                Array.prototype.forEach.call(progress_h_chart_div.getElementsByTagName('rect'), function(rect) {
+                    if (rect.getAttribute('fill') === '#000000') {
+                        rect.setAttribute('width', '8');
+                    }
+                    });
+                });
+
                 chart.draw(data, options);
             }
         </script>
