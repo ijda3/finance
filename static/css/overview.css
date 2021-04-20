@@ -1,36 +1,29 @@
-.overtranlat{
+.overtranlat {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.despcateg{
-    padding: 10px;
+.despcateg {
     border-radius: 6px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 10px;
-
-    position: static;
-    width: 323px;
     height: 276px;
-    left: 30px;
-    top: 315px;
-    flex: none;
     order: 1;
     flex-grow: 0;
     margin: 40px 0px;
 }
 
-.titulo{
+.titulo {
     font-weight: 500;
     font-size: 18px;
     line-height: 19px;
     padding-bottom: 22px;
 }
 
-.titulo2{
+.titulo2 {
     height: 19px;
     width: 200px;
     left: 10px;
@@ -38,80 +31,80 @@
     flex-direction: row;
 }
 
-.grafc{
+.grafc {
     display: flex;
     flex-direction: row;
 }
 
-.grafc2{
+.grafc2 {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    gap: 20px;
+    width: 100%;
 }
 
-.painel{
+.painel {
+    flex: 1;
     padding-top: 16px;
     padding-left: 20px;
     margin-right: 17px;
     display: flex;
     flex-direction: column;
     height: 194px;
-    width: 144px;
+    /* width: 144px; */
     border-radius: 6px;
-    border: 1px solid #F5F6F8;
+    border: 1px solid #f5f6f8;
     box-sizing: border-box;
 }
 
-.painel2{
-
+.painel2 {
+    flex: 1;
     height: 30px;
-    width: 290px;
     border-radius: 10px;
     padding: 19px;
     display: flex;
-    margin-top: 10px;
-    border: 1px solid #F5F6F8;
+    border: 1px solid #f5f6f8;
     flex-direction: row;
-
 }
 
-.disp{
+.disp {
     font-weight: 500;
     font-size: 11px;
     line-height: 11px;
     padding-bottom: 29px;
 }
 
-.valor{
+.valor {
     padding-top: 43px;
     font-weight: 500;
     font-size: 18px;
     line-height: 19px;
-
 }
 
-.valor2{
+.valor2 {
     padding-top: 7px;
     font-weight: 500;
     font-size: 11px;
     line-height: 11px;
-    color: #F58234;
+    color: #f58234;
 }
 
-.valor3{
+.valor3 {
     font-weight: 500;
     font-size: 15px;
     line-height: 15px;
     color: #000000;
 }
 
-.caixa{
+.caixa {
     flex-direction: column;
     display: flex;
     justify-content: space-between;
     padding-left: 15px;
 }
 
-.barra{
+.barra {
     display: flex;
     flex-direction: row;
     height: 40px;
@@ -139,63 +132,63 @@
     margin-right: 7px;
 }
 
-.dispcolor{
-    color: #F58234;
+.dispcolor {
+    color: #f58234;
     border-radius: 2px;
 }
 
-.receitcolor{
-    color: #27BC40;
+.receitcolor {
+    color: #27bc40;
     border-radius: 2px;
 }
 
-.dispect{
-    border: 2px solid #F58234;
+.dispect {
+    border: 2px solid #f58234;
     border-radius: 2px;
 }
 
-.receit{
-    border: 2px solid #27BC40;
+.receit {
+    border: 2px solid #27bc40;
     border-radius: 2px;
     transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
-.recinat{
+.recinat {
     border: 2px solid rgba(39, 188, 64, 0.3);
     border-radius: 2px;
     transform: rotate(-180deg);
 }
 
-.despinat{
+.despinat {
     border: 2px solid rgba(245, 142, 73, 0.3);
     border-radius: 2px;
     transform: rotate(-180deg);
 }
 
-.formatdesp{
+.formatdesp {
     height: 11px;
     width: 51px;
     font-weight: 500;
     font-size: 11px;
     line-height: 11px;
-    color: #9999A0;
+    color: #9999a0;
 }
 
-.porcentagem{
+.porcentagem {
     font-size: 12px;
-    color: #F69B5C;
+    color: #f69b5c;
     margin-left: auto;
 }
 
-.porcentagem1{
+.porcentagem1 {
     font-size: 12px;
-    color: #5DC06E;;
+    color: #5dc06e;
     margin-left: auto;
 }
 
-.porcentagem2{
+.porcentagem2 {
     font-size: 12px;
-    color: #02A4FF;
+    color: #02a4ff;
     margin-left: auto;
 }
 
@@ -212,7 +205,7 @@
 .circle-container:before,
 .circle-container:after {
     box-sizing: border-box;
-    content: '';
+    content: "";
     position: absolute;
     top: -5px;
     left: -5px;
@@ -223,41 +216,47 @@
 }
 
 .alimentacao {
-    border-color: #F58234;
+    border-color: #f58234;
 }
 
 .alimentacao:before {
-    border-left-color: #FFD6BA;
+    border-left-color: #ffd6ba;
     transform: rotate(45deg);
 }
 
 .salario {
-    border-color: #27BC40;
+    border-color: #27bc40;
 }
 
 .salario:before {
-    border-left-color: #ABEAB6;
+    border-left-color: #abeab6;
     transform: rotate(45deg);
 }
 
 .assinaturas {
-    border-color: #02A4FF;
+    border-color: #02a4ff;
 }
 
 .assinaturas:before {
-    border-left-color: #B6E1F9;
+    border-left-color: #b6e1f9;
     transform: rotate(45deg);
 }
 
-.painellaranja{
-    background: #FAF7F5;
+.painellaranja {
+    background: #faf7f5;
 }
 
-.painelverde{
-    background: #EEF4EF;
+.painelverde {
+    background: #eef4ef;
 }
 
-.painelazul{
-    background: #F1FAFF;
+.painelazul {
+    background: #f1faff;
 }
 
+@media (min-width: 1200px) {
+    .grafc2 {
+        flex-wrap: initial;
+        flex-direction: column;
+    }
+}

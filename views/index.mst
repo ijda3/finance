@@ -174,10 +174,10 @@
             </div>
             <aside>
                 <div class="overtranlat">
-                    <div class="titulo"> Overview mensal </div>
+                    <div class="titulo">Overview mensal</div>
                     <div class="grafc">
                         <div class="painel">
-                            <div class="disp"> DESPESAS </div>
+                            <div class="disp">DESPESAS</div>
                             <div class="barra">
                                 <div class="perc-75 despinat"></div>
                                 <div class="perc-50 despinat"></div>
@@ -187,11 +187,11 @@
                                 <div class="perc-25 despinat"></div>
                                 <div class="perc-75 dispect"></div>
                             </div>
-                            <div class="valor"> R$ 1446,42 </div>
-                            <div class="valor2"> + R$ 71,22 </div>
+                            <div class="valor">R$ 1446,42</div>
+                            <div class="valor2">+ R$ 71,22</div>
                         </div>
                         <div class="painel">
-                            <div class="disp"> RECEITAS </div>
+                            <div class="disp">RECEITAS</div>
                             <div class="barra">
                                 <div class="perc-75 recinat"></div>
                                 <div class="perc-50 recinat"></div>
@@ -202,13 +202,13 @@
                                 <div class="perc-75 receit"></div>
                             </div>
                             <div>
-                                <div class="valor"> R$ 3479,08 </div>
-                                <div class="valor2 receitcolor"> + R$ 71,22 </div>
+                                <div class="valor">R$ 3479,08</div>
+                                <div class="valor2 receitcolor">+ R$ 71,22</div>
                             </div>
                         </div>
                     </div>
                     <div class="despcateg">
-                        <div class="titulo2"> Despesas por Categoria </div>
+                        <div class="titulo2">Despesas por Categoria</div>
                         <div class="grafc2">
                             <div class="painel2 painellaranja">
                                 <div class="circle-container alimentacao"></div>

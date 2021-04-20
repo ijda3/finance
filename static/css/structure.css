@@ -76,7 +76,7 @@
     grid-area: main;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 20px 20px 90px;
     gap: 20px;
     justify-content: space-around;
     box-sizing: border-box;
@@ -126,6 +126,10 @@
     .root > main {
         padding: 24px;
         gap: 24px;
+    }
+
+    .root > main > .content {
+        flex: 1;
     }
 }
 
