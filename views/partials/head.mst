@@ -12,8 +12,8 @@
 <link rel="stylesheet" href="/css/menu.css">
 <link rel="stylesheet" href="/css/submenu.css">
 <link rel="stylesheet" href="/css/transactions.css">
-<link rel="stylesheet" href="/css/overview.css">
 <link rel="stylesheet" href="/css/form.css">
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="/scripts/submenu.js"></script>

@@ -3,6 +3,7 @@
 
 <head>
     {{>head}}
+    <link rel="stylesheet" href="/css/overview.css">
 </head>
 
 <body>
