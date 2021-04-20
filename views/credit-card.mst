@@ -3,8 +3,8 @@
 
 <head>
     {{>head}}
+    <link rel="stylesheet" href="/css/overview.css">
 </head>
-
 
 <body>
     <div class="root">
@@ -166,7 +166,7 @@
                             <div class="painel2 painelverde">
                                 <div class="circle-container salario"></div>
                                 <div class="caixa">
-                                    <div class="formatdesp">Salário</div>
+                                    <div class="formatdesp">Pagamentos</div>
                                     <div class="valor3">4700,00</div>
                                 </div>
                                 <div class="porcentagem1">47%</div>
