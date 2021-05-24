@@ -1,14 +1,12 @@
 import express from "express";
 import path from "path";
-import mustacheExpress from "mustache-express";
 
 const app = express();
 const __dirname = path.resolve();
 const VIEWS_PATH = __dirname + "/views";
 const PRODUCTION = process.env.NODE_ENV === "production";
 
-app.engine("mst", mustacheExpress(VIEWS_PATH + "/partials", ".mst"));
-app.set("view engine", "mst");
+app.set("view engine", "ejs");
 app.set("views", VIEWS_PATH);
 app.disable("view cache");
 
