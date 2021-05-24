@@ -59,13 +59,13 @@
                     <img class="pencil" style="display: none" src="/images/pencil.svg" alt="" title="Editar">
                 </a>
             </li>
-             {{^chart_page}}
+             <% if (chart_page) { %>
                 <li>
                     <a href="/new-category"><img src="/images/vector.svg" alt="">
                         <p style="color: blue;">Adicionar</p>
                     </a>
                 </li>
-            {{/chart_page}}
+            <% } %>
         </ul>
     </nav>
 </div>

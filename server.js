@@ -15,6 +15,10 @@ app.use(express.static(path.join(__dirname, "./static")));
 app.get("/", function (req, res) {
   res.render("index", {
     menu_conta: true,
+    credit_card_page: false,
+    chart_page: false,
+    menu_credit_card: false,
+    menu_charts: false,
   });
 });
 

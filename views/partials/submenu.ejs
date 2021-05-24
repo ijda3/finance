@@ -1,22 +1,18 @@
 <aside>
     <div class="submenu-container">
         <div class="submenu-list">
-            {{#chart_page}}
-                {{> submenu_contas}}
-                {{> submenu_credit_cards}}
-            {{/chart_page}}
+            <% if (chart_page) { %>
+                <%- include('submenu_contas') %>
+                <%- include('submenu_credit_cards') %>
+            <% } else { %>
+                <% if (credit_card_page) { %>
+                    <%- include('submenu_credit_cards') %>
+                <% } else { %>
+                    <%- include('submenu_contas') %>
+                <% } %>
 
-            {{^chart_page}}
-                {{#credit_card_page}}
-                    {{> submenu_credit_cards}}
-                {{/credit_card_page}}
-
-                {{^credit_card_page}}
-                    {{> submenu_contas}}
-                {{/credit_card_page}}
-
-                {{>submenu_categorias}}
-            {{/chart_page}}
+                <%- include('submenu_categorias') %>
+            <% } %>
         </div>
     </div>
 </aside>

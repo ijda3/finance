@@ -12,13 +12,13 @@
                     <p>Mastercard</p>
                 </a>
             </li>
-            {{^chart_page}}
+            <% if (chart_page) { %>
                 <li>
                     <a href="/new-creditcard"><img src="/images/vector.svg" alt="">
                         <p style="color: blue;">Adicionar</p>
                     </a>
                 </li>
-            {{/chart_page}}
+            <% } %>
         </ul>
     </nav>
 </div>

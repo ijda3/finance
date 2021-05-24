@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-    {{>head}}
+    <%- include('partials/head') %>
     <link rel="stylesheet" href="/css/new-transaction.css">
 </head>
 
 <body>
     <div class="root">
-        {{>logo}}
-        {{>menu}}
-        {{>user}}
-        {{>submenu}}
+        <%- include('partials/logo') %>
+        <%- include('partials/menu') %>
+        <%- include('partials/user') %>
+        <%- include('partials/submenu') %>
 
         <main>
             <div class="content">
