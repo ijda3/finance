@@ -1,0 +1,30 @@
+<div class="list-contas">
+    <h3>Contas</h3>
+    <nav>
+        <ul>
+            <li class="<%- current_url == '/accounts/itau' && 'active' %>">
+                <a href="/accounts/itau"><img src="/images/itau.svg" alt="">
+                    <p>Itaú</p>
+                </a>
+            </li>
+            <li class="<%- current_url == '/accounts/caixa' && 'active' %>">
+                <a href="/accounts/caixa"><img src="/images/caixa.svg" alt="">
+                    <p>Caixa</p>
+                </a>
+            </li>
+            <li class="<%- current_url == '/accounts/nubank' && 'active' %>">
+                <a href="/accounts/nubank"><img src="/images/nubank.svg" alt="">
+                    <p>Nubank</p>
+                </a>
+            </li>
+            <% if (!locals.chart_page) { %>
+                <li>
+                    <a href="/accounts/new"><img src="/images/vector.svg" alt="">
+                        <p style="color: blue;">Adicionar</p>
+                    </a>
+                </li>
+            <% } %>
+            </li>
+        </ul>
+    </nav>
+</div>

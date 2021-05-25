@@ -1,0 +1,30 @@
+[
+    {
+        "color": "#EEF4EF",
+        "nome": "Receitas"
+    },
+    {
+        "color": "#F1FAFF",
+        "nome": "Assinaturas"
+    },
+    {
+        "color": "#fff1f1",
+        "nome": "Transporte"
+    },
+    {
+        "color": "#fcf1ff",
+        "nome": "Moradia"
+    },
+    {
+        "color": "#FAF7F5",
+        "nome": "Alimentação"
+    },
+    {
+        "color": "#f1fffe",
+        "nome": "Educação"
+    },
+    {
+        "color": "#fffff1",
+        "nome": "Saúde"
+    }
+]

@@ -1,0 +1,89 @@
+{
+  "receitas": 3479.08,
+  "despesas": 1446.42,
+  "saldo": 2032.66,
+  "transacoes": [
+    {
+        "nome": "Salário",
+        "imageUrl": "/images/payment.svg",
+        "data": "01/04/2021 14:00",
+        "tags": [
+            "Receitas"
+        ],
+        "valor": 3479.08
+    },
+    {
+        "nome": "Amazon",
+        "imageUrl": "/images/amazon.svg",
+        "data": "02/04/2021 17:50",
+        "tags": [
+            "Alimentação"
+        ],
+        "valor": -274.9
+    },
+    {
+        "nome": "Uber",
+        "imageUrl": "/images/uber.svg",
+        "data": "05/04/2021 07:30",
+        "tags": [
+            "Transporte"
+        ],
+        "valor": -16.47
+    },
+    {
+        "nome": "Copel",
+        "imageUrl": "/images/copel.svg",
+        "data": "07/04/2021 08:00",
+        "tags": [
+            "Moradia"
+        ],
+        "valor": -113.35
+    },
+    {
+        "nome": "Condomínio",
+        "imageUrl": "/images/amazon.svg",
+        "data": "10/04/2021 12:00",
+        "tags": [
+            "Moradia"
+        ],
+        "valor": -800
+    },
+    {
+        "nome": "Internet",
+        "imageUrl": "/images/vivo.svg",
+        "data": "15/04/2021 09:30",
+        "tags": [
+            "Moradia",
+            "Assinaturas"
+        ],
+        "valor": -149.9
+    },
+    {
+        "nome": "Netflix",
+        "imageUrl": "/images/netflix.svg",
+        "data": "20/04/2021 12:30",
+        "tags": [
+            "Assinaturas"
+        ],
+        "valor": -45.9
+    },
+    {
+        "nome": "Xbox Game Pass",
+        "imageUrl": "/images/xbox.svg",
+        "data": "23/04/2021 15:45",
+        "tags": [
+            "Assinaturas"
+        ],
+        "valor": -29
+    },
+    {
+        "nome": "Spotify",
+        "imageUrl": "/images/spotify.svg",
+        "data": "30/04/2021 14:32",
+        "tags": [
+            "Assinaturas"
+        ],
+        "valor": -16.9
+    }
+]
+}

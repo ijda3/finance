@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    {{>head}}
+    <%- include('partials/head') %>
     <title>Gráficos</title>
     <link rel="stylesheet" href="/css/charts.css">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -10,10 +10,10 @@
 
 <body>
     <div class="root">
-        {{>logo}}
-        {{>menu}}
-        {{>user}}
-        {{>submenu}}
+        <%- include('partials/logo') %>
+        <%- include('partials/menu') %>
+        <%- include('partials/user') %>
+        <%- include('partials/submenu') %>
 
         <main>
             <div class="content">
@@ -21,9 +21,9 @@
                     <div class="charts row">
                         <h2>Gráficos</h2>
                     </div>
-                    {{>charts_progresso_categoria}}
-                    {{>charts_despesa_receita}}
-                    {{>charts_ultimos_12_meses}}
+                    <%- include('partials/charts_progresso_categoria') %>
+                    <%- include('partials/charts_despesa_receita') %>
+                    <%- include('partials/charts_ultimos_12_meses') %>
                 </div>
             </div>
         </main>

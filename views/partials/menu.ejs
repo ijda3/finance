@@ -1,12 +1,12 @@
 <nav>
     <ul>
-        <li class="{{#menu_conta}}active{{/menu_conta}}">
+        <li class="<%- (current_url == '/' || current_url.startsWith('/accounts')) && 'active' %>">
             <a href="/"><span class="icon icon-balance"></span></a>
         </li>
-        <li class="{{#menu_credit_card}}active{{/menu_credit_card}}">
+        <li class="<%- locals.menu_credit_card && 'active' %>">
             <a href="/credit-card"><span class="icon icon-credit_card"></span></a>
         </li>
-        <li class="{{#menu_charts}}active{{/menu_charts}}">
+        <li class="<%- locals.menu_charts && 'active' %>">
             <a href="/charts"><span class="icon icon-graphic"></span></a>
         </li>
     </ul>
