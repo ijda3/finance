@@ -5,10 +5,10 @@
                 <%- include('submenu_contas') %>
                 <%- include('submenu_credit_cards') %>
             <% } else { %>
-                <% if (credit_card_page) { %>
-                    <%- include('submenu_credit_cards') %>
-                <% } else { %>
+                <% if (account_page) { %>
                     <%- include('submenu_contas') %>
+                <% } else { %>
+                    <%- include('submenu_credit_cards') %>
                 <% } %>
 
                 <%- include('submenu_categorias') %>

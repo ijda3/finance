@@ -2,24 +2,24 @@
     <h3>Contas</h3>
     <nav>
         <ul>
-            <li class="active">
-                <a href="/"><img src="/images/itau.svg" alt="">
+            <li class="<%- current_url == '/accounts/itau' && 'active' %>">
+                <a href="/accounts/itau"><img src="/images/itau.svg" alt="">
                     <p>Itaú</p>
                 </a>
             </li>
-            <li>
-                <a href="/"><img src="/images/caixa.svg" alt="">
+            <li class="<%- current_url == '/accounts/caixa' && 'active' %>">
+                <a href="/accounts/caixa"><img src="/images/caixa.svg" alt="">
                     <p>Caixa</p>
                 </a>
             </li>
-            <li>
-                <a href="/"><img src="/images/nubank.svg" alt="">
+            <li class="<%- current_url == '/accounts/nubank' && 'active' %>">
+                <a href="/accounts/nubank"><img src="/images/nubank.svg" alt="">
                     <p>Nubank</p>
                 </a>
             </li>
-            <% if (chart_page) { %>
+            <% if (!locals.chart_page) { %>
                 <li>
-                    <a href="/new-account"><img src="/images/vector.svg" alt="">
+                    <a href="/accounts/new"><img src="/images/vector.svg" alt="">
                         <p style="color: blue;">Adicionar</p>
                     </a>
                 </li>
