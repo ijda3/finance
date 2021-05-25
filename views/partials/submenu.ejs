@@ -1,11 +1,11 @@
 <aside>
     <div class="submenu-container">
         <div class="submenu-list">
-            <% if (chart_page) { %>
+            <% if (locals.chart_page) { %>
                 <%- include('submenu_contas') %>
                 <%- include('submenu_credit_cards') %>
             <% } else { %>
-                <% if (account_page) { %>
+                <% if (locals.account_page) { %>
                     <%- include('submenu_contas') %>
                 <% } else { %>
                     <%- include('submenu_credit_cards') %>
