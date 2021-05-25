@@ -42,6 +42,24 @@ app.get("/accounts/:account", function (req, res) {
   });
 });
 
+app.get("/credit-cards/new", function (req, res) {
+  res.render("credit-cards/new");
+});
+
+app.get("/credit-cards/:card", function (req, res) {
+  const { category } = req.query;
+  const { card } = req.params;
+  const dados = { ...require(`./data/credit-cards/${card}.json`) };
+
+  dados.transacoes = dados.transacoes.filter(
+    (item) => !category || item.tags.includes(category)
+  );
+
+  res.render("credit-cards/index", {
+    dados: dados,
+  });
+});
+
 app.get("/:page", function (req, res) {
   const { page } = req.params;
   const CREDIT_CARD_PAGES = [

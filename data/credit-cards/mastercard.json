@@ -1,0 +1,65 @@
+{
+    "gastos": 1790.33,
+    "pagamentos": 2549.23,
+    "fatura": 120.23,
+    "transacoes": [
+        {   
+            "nome": "Amazon",
+            "imageUrl": "/images/amazon.svg",
+            "data": "01/04/2021 14:32",
+            "valor": -472.50,
+            "tags": []
+        },
+        {
+         
+            "nome": "Uber",
+            "imageUrl": "/images/uber.svg",
+            "data": "03/04/2021 07:30",
+            "valor": -23.78,
+            "tags": []
+        },
+        {
+            "nome": "Copel",
+            "imageUrl": "/images/copel.svg",
+            "data": "05/04/2021 22:00",
+            "valor" :-113.45,
+            "tags": []
+        },
+        {
+            "nome": "Condomínio",
+            "imageUrl": "/images/amazon.svg",
+            "data": "10/04/2021 12:00",
+            "valor" :-950.00,
+            "tags": []
+        },
+        {
+            "nome": "Internet",
+            "imageUrl": "/images/vivo.svg",
+            "data": "17/04/2021 14:32",
+            "valor" :-149.90,
+            "tags": []
+
+        },
+        {
+            "nome": "Netflix",
+            "imageUrl": "/images/netflix.svg",
+            "data": "18/04/2021 15:54",
+            "valor": -39.90,
+            "tags": []
+        },
+        {
+            "nome": "Xbox Game Pass",
+            "imageUrl": "/images/xbox.svg",
+            "data": "25/04/2021 10:25",
+            "valor": -29.90,
+            "tags": []
+        },
+        {
+            "nome": "Spotify",
+            "imageUrl": "/images/spotify.svg",
+            "data": "28/04/2021 14:32",
+            "valor": -10.90,
+            "tags": []
+        }
+    ]
+}
